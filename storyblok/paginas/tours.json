@@ -1,0 +1,297 @@
+{
+  "_uid": "page-t2",
+  "component": "page",
+  "seo_title": "Tour cervecero | Compañía Cervecera Hércules",
+  "seo_title__i18n__en": "Brewery tour | Compañía Cervecera Hércules",
+  "seo_description": "Conoce la planta de producción y el cuarto de barricas de Hércules, con una pinta en mano.",
+  "seo_description__i18n__en": "Tour the Hércules production plant and barrel room, pint in hand.",
+  "body": [
+    {
+      "_uid": "hero-t3",
+      "component": "hero",
+      "size": "media",
+      "image": {
+        "id": null,
+        "filename": "/fotos/fabrica.jpg",
+        "alt": "Planta de producción de Hércules",
+        "fieldtype": "asset",
+        "name": "",
+        "title": "",
+        "focus": ""
+      },
+      "title": "Tours",
+      "title__i18n__en": "Tours",
+      "subtitle": "Recorre la cervecería por dentro.",
+      "subtitle__i18n__en": "See the brewery from the inside."
+    },
+    {
+      "_uid": "text-t4",
+      "component": "text_block",
+      "style": "centrado",
+      "body": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Conoce nuestra planta de producción y el cuarto de barricas donde elaboramos nuestras cervezas."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Con una pinta en mano nos sumergiremos en los espacios y la historia de Hércules, explorando los ingredientes y procesos esenciales para crear la bebida que tanto nos apasiona."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Caminaremos entre la maquinaria donde, día tras día, nuestro equipo de producción trabaja para ofrecernos la cerveza más fresca posible."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Para finalizar, visitaremos el cuarto de barricas donde fermentamos y maduramos nuestras cervezas salvajes."
+              }
+            ]
+          }
+        ]
+      },
+      "body__i18n__en": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Visit our production plant and the barrel room where we make our beers."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Pint in hand, we'll dive into the spaces and history of Hércules, exploring the ingredients and essential processes behind the drink we love so much."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "We'll walk among the machinery where, day after day, our production team works to bring you the freshest beer possible."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "To finish, we'll visit the barrel room where we ferment and age our wild beers."
+              }
+            ]
+          }
+        ]
+      },
+      "title": "Tour cervecero",
+      "title__i18n__en": "Brewery tour",
+      "button_label": "Reservar",
+      "button_label__i18n__en": "Book now",
+      "button_link": {
+        "id": "",
+        "url": "#reservar",
+        "linktype": "url",
+        "fieldtype": "multilink",
+        "cached_url": "#reservar"
+      }
+    },
+    {
+      "_uid": "carousel-t5",
+      "component": "carousel",
+      "items": [
+        {
+          "_uid": "slide-t6",
+          "component": "slide",
+          "image": {
+            "id": null,
+            "filename": "/fotos/lupulo.jpg",
+            "alt": "Lúpulo en la olla de cocción",
+            "fieldtype": "asset",
+            "name": "",
+            "title": "",
+            "focus": ""
+          }
+        },
+        {
+          "_uid": "slide-t7",
+          "component": "slide",
+          "image": {
+            "id": null,
+            "filename": "/fotos/almacen.jpg",
+            "alt": "La fábrica de noche",
+            "fieldtype": "asset",
+            "name": "",
+            "title": "",
+            "focus": ""
+          }
+        },
+        {
+          "_uid": "slide-t8",
+          "component": "slide",
+          "image": {
+            "id": null,
+            "filename": "/fotos/cerveza-espuma.jpg",
+            "alt": "Cerveza recién servida",
+            "fieldtype": "asset",
+            "name": "",
+            "title": "",
+            "focus": ""
+          }
+        },
+        {
+          "_uid": "slide-t9",
+          "component": "slide",
+          "image": {
+            "id": null,
+            "filename": "/fotos/letrero.jpg",
+            "alt": "Letrero antiguo de la fábrica",
+            "fieldtype": "asset",
+            "name": "",
+            "title": "",
+            "focus": ""
+          }
+        }
+      ]
+    },
+    {
+      "_uid": "text-t10",
+      "component": "text_block",
+      "style": "centrado",
+      "body": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Barra principal del Jardín Hércules (si no la encuentra, pregunte al llegar)."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Favor de llegar 15 minutos antes del recorrido. Habrá una tolerancia de 5 minutos."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 3
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Importante"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "No hay reembolsos en caso de no atender a un recorrido agendado o llegar después del tiempo de tolerancia."
+              }
+            ]
+          }
+        ]
+      },
+      "body__i18n__en": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Main bar of the Jardín Hércules (if you can't find it, ask when you arrive)."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Please arrive 15 minutes before the tour. There is a 5-minute grace period."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "attrs": {
+              "level": 3
+            },
+            "content": [
+              {
+                "type": "text",
+                "text": "Important"
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "No refunds for missed tours or for arriving after the grace period."
+              }
+            ]
+          }
+        ]
+      },
+      "title": "Punto de reunión",
+      "title__i18n__en": "Meeting point",
+      "button_label": "Reservar",
+      "button_label__i18n__en": "Book now",
+      "button_link": {
+        "id": "",
+        "url": "#reservar",
+        "linktype": "url",
+        "fieldtype": "multilink",
+        "cached_url": "#reservar"
+      },
+      "link_label": "Regresar",
+      "link_label__i18n__en": "Back",
+      "link": {
+        "id": "",
+        "url": "/cerveceria",
+        "linktype": "url",
+        "fieldtype": "multilink",
+        "cached_url": "/cerveceria"
+      }
+    }
+  ]
+}

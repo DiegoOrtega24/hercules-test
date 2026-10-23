@@ -1,0 +1,515 @@
+{
+  "_uid": "page-1",
+  "component": "page",
+  "seo_title": "Compañía Cervecera Hércules | Cervecería, jardín y hotel en Querétaro",
+  "seo_title__i18n__en": "Compañía Cervecera Hércules | Brewery, beer garden and hotel in Querétaro",
+  "seo_description": "Cervecería, jardín de cerveza y hotel dentro de una fábrica textil de 1846 en Querétaro.",
+  "seo_description__i18n__en": "Brewery, beer garden and hotel inside an 1846 textile mill in Querétaro, Mexico.",
+  "body": [
+    {
+      "_uid": "hero-2",
+      "component": "hero",
+      "image": {
+        "id": null,
+        "filename": "/fotos/fabrica.jpg",
+        "alt": "Interior de la fábrica con tarimas de latas y un montacargas",
+        "fieldtype": "asset",
+        "name": "",
+        "title": "",
+        "focus": ""
+      },
+      "size": "completa",
+      "title": "Cerveza hecha en una fábrica de 1846",
+      "title__i18n__en": "Beer brewed in an 1846 factory",
+      "subtitle": "Cervecería, jardín de cerveza y hotel en la colonia Hércules, Querétaro.",
+      "subtitle__i18n__en": "Brewery, beer garden and hotel in the Hércules neighborhood of Querétaro.",
+      "images": [
+        {
+          "id": 1,
+          "filename": "/fotos/fabrica.jpg",
+          "alt": "Interior de la fábrica",
+          "fieldtype": "asset",
+          "name": "",
+          "title": "",
+          "focus": ""
+        },
+        {
+          "id": 2,
+          "filename": "/fotos/jardin-noche.jpg",
+          "alt": "Amigos en el jardín de noche",
+          "fieldtype": "asset",
+          "name": "",
+          "title": "",
+          "focus": ""
+        },
+        {
+          "id": 3,
+          "filename": "/fotos/almacen.jpg",
+          "alt": "Almacén Hércules de noche",
+          "fieldtype": "asset",
+          "name": "",
+          "title": "",
+          "focus": ""
+        },
+        {
+          "id": 4,
+          "filename": "/fotos/vista-aerea.jpg",
+          "alt": "Vista aérea de la colonia Hércules",
+          "fieldtype": "asset",
+          "name": "",
+          "title": "",
+          "focus": ""
+        }
+      ]
+    },
+    {
+      "_uid": "text-t1",
+      "component": "text_block",
+      "style": "centrado",
+      "body": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Una antigua fábrica textil convertida en cervecería, jardín y hotel. Ven por una cerveza y quédate el fin de semana."
+              }
+            ]
+          }
+        ]
+      },
+      "body__i18n__en": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "An old textile mill turned brewery, beer garden and hotel. Come for a beer, stay for the weekend."
+              }
+            ]
+          }
+        ]
+      },
+      "title": "Bienvenidos a Hércules",
+      "title__i18n__en": "Welcome to Hércules",
+      "link_label": "Conoce la historia",
+      "link_label__i18n__en": "Our history",
+      "link": {
+        "id": "",
+        "url": "/historia",
+        "linktype": "url",
+        "fieldtype": "multilink",
+        "cached_url": "/historia"
+      }
+    },
+    {
+      "_uid": "feature-r2",
+      "component": "feature",
+      "image": {
+        "id": null,
+        "filename": "/fotos/lupulo.jpg",
+        "alt": "Lúpulo cayendo en la olla de cocción",
+        "fieldtype": "asset",
+        "name": "",
+        "title": "",
+        "focus": ""
+      },
+      "image_side": "izquierda",
+      "title": "Cervecería",
+      "title__i18n__en": "Brewery",
+      "text": "Cervezas de línea y de temporada, hechas dentro de la fábrica. Pruébalas en el jardín o llévatelas a casa.",
+      "text__i18n__en": "Year-round and seasonal beers brewed inside the mill. Try them in the garden or take them home.",
+      "link_label": "Conoce las cervezas",
+      "link_label__i18n__en": "See the beers",
+      "link": {
+        "id": "",
+        "url": "/cerveceria",
+        "linktype": "url",
+        "fieldtype": "multilink",
+        "cached_url": "/cerveceria"
+      },
+      "logo": {
+        "id": null,
+        "filename": "/logos/cerveceria.svg",
+        "alt": "Compañía Cervecera Hércules",
+        "fieldtype": "asset",
+        "name": "",
+        "title": "",
+        "focus": ""
+      }
+    },
+    {
+      "_uid": "feature-r3",
+      "component": "feature",
+      "image": {
+        "id": null,
+        "filename": "/fotos/jardin-noche.jpg",
+        "alt": "Amigos brindando en el jardín de noche",
+        "fieldtype": "asset",
+        "name": "",
+        "title": "",
+        "focus": ""
+      },
+      "image_side": "derecha",
+      "title": "Jardín de cerveza",
+      "title__i18n__en": "Beer garden",
+      "text": "Para quedarse la tarde entera: cerveza fresca, comida y buena compañía.",
+      "text__i18n__en": "Stay the whole afternoon: fresh beer, good food and good company.",
+      "link_label": "Horarios y menú",
+      "link_label__i18n__en": "Hours and menu",
+      "link": {
+        "id": "",
+        "url": "/jardin",
+        "linktype": "url",
+        "fieldtype": "multilink",
+        "cached_url": "/jardin"
+      },
+      "logo": {
+        "id": null,
+        "filename": "/logos/jardin.svg",
+        "alt": "Jardín Hércules",
+        "fieldtype": "asset",
+        "name": "",
+        "title": "",
+        "focus": ""
+      }
+    },
+    {
+      "_uid": "carousel-r10",
+      "component": "carousel",
+      "items": [
+        {
+          "_uid": "slide-r4",
+          "component": "slide",
+          "image": {
+            "id": null,
+            "filename": "/fotos/almacen.jpg",
+            "alt": "Almacén Hércules iluminado de noche",
+            "fieldtype": "asset",
+            "name": "",
+            "title": "",
+            "focus": ""
+          }
+        },
+        {
+          "_uid": "slide-r5",
+          "component": "slide",
+          "image": {
+            "id": null,
+            "filename": "/fotos/cerveza-espuma.jpg",
+            "alt": "Cerveza recién servida",
+            "fieldtype": "asset",
+            "name": "",
+            "title": "",
+            "focus": ""
+          }
+        },
+        {
+          "_uid": "slide-r6",
+          "component": "slide",
+          "image": {
+            "id": null,
+            "filename": "/fotos/letrero.jpg",
+            "alt": "Letrero antiguo pintado a mano",
+            "fieldtype": "asset",
+            "name": "",
+            "title": "",
+            "focus": ""
+          }
+        },
+        {
+          "_uid": "slide-r7",
+          "component": "slide",
+          "image": {
+            "id": null,
+            "filename": "/fotos/comida.jpg",
+            "alt": "Comida del jardín",
+            "fieldtype": "asset",
+            "name": "",
+            "title": "",
+            "focus": ""
+          }
+        },
+        {
+          "_uid": "slide-r8",
+          "component": "slide",
+          "image": {
+            "id": null,
+            "filename": "/fotos/agave.jpg",
+            "alt": "Equipo de Hércules entre agaves",
+            "fieldtype": "asset",
+            "name": "",
+            "title": "",
+            "focus": ""
+          }
+        },
+        {
+          "_uid": "slide-r9",
+          "component": "slide",
+          "image": {
+            "id": null,
+            "filename": "/fotos/muro.jpg",
+            "alt": "Muro original de la fábrica",
+            "fieldtype": "asset",
+            "name": "",
+            "title": "",
+            "focus": ""
+          }
+        }
+      ],
+      "title": "La fábrica en fotos",
+      "title__i18n__en": "The mill in pictures"
+    },
+    {
+      "_uid": "feature-r11",
+      "component": "feature",
+      "image": {
+        "id": null,
+        "filename": "/fotos/vista-aerea.jpg",
+        "alt": "Vista aérea de la colonia Hércules al atardecer",
+        "fieldtype": "asset",
+        "name": "",
+        "title": "",
+        "focus": ""
+      },
+      "image_side": "izquierda",
+      "title": "Hotel",
+      "title__i18n__en": "Hotel",
+      "text": "Habitaciones dentro de la antigua fábrica textil, a unos pasos del jardín.",
+      "text__i18n__en": "Rooms inside the old textile mill, steps from the garden.",
+      "button_label": "Reservar",
+      "button_label__i18n__en": "Book now",
+      "button_link": {
+        "id": "",
+        "url": "/hotel#reservar",
+        "linktype": "url",
+        "fieldtype": "multilink",
+        "cached_url": "/hotel#reservar"
+      },
+      "link_label": "Conocer más",
+      "link_label__i18n__en": "Learn more",
+      "link": {
+        "id": "",
+        "url": "/hotel",
+        "linktype": "url",
+        "fieldtype": "multilink",
+        "cached_url": "/hotel"
+      },
+      "logo": {
+        "id": null,
+        "filename": "/logos/hotel.svg",
+        "alt": "Hotel Hércules",
+        "fieldtype": "asset",
+        "name": "",
+        "title": "",
+        "focus": ""
+      }
+    },
+    {
+      "_uid": "feature-r12",
+      "component": "feature",
+      "image": {
+        "id": null,
+        "filename": "/fotos/cerveza-vaso.jpg",
+        "alt": "Vaso de cerveza con el logo de Hércules",
+        "fieldtype": "asset",
+        "name": "",
+        "title": "",
+        "focus": ""
+      },
+      "image_side": "derecha",
+      "title": "Almacén",
+      "title__i18n__en": "Shop",
+      "text": "Cerveza y artículos de la marca para llevar a casa, en línea o en el almacén.",
+      "text__i18n__en": "Beer and Hércules goods to take home, online or at the shop.",
+      "button_label": "Comprar ahora",
+      "button_label__i18n__en": "Shop now",
+      "button_link": {
+        "id": "",
+        "url": "/almacen",
+        "linktype": "url",
+        "fieldtype": "multilink",
+        "cached_url": "/almacen"
+      },
+      "link_label": "Conocer más",
+      "link_label__i18n__en": "Learn more",
+      "link": {
+        "id": "",
+        "url": "/almacen",
+        "linktype": "url",
+        "fieldtype": "multilink",
+        "cached_url": "/almacen"
+      },
+      "logo": {
+        "id": null,
+        "filename": "/logos/almacen.svg",
+        "alt": "Almacén Hércules",
+        "fieldtype": "asset",
+        "name": "",
+        "title": "",
+        "focus": ""
+      }
+    },
+    {
+      "_uid": "carousel-r16",
+      "component": "carousel",
+      "items": [
+        {
+          "_uid": "slide-r13",
+          "component": "slide",
+          "image": {
+            "id": null,
+            "filename": "/fotos/jardin-noche.jpg",
+            "alt": "Jardín de cerveza de noche",
+            "fieldtype": "asset",
+            "name": "",
+            "title": "",
+            "focus": ""
+          },
+          "title": "Jardín de cerveza",
+          "title__i18n__en": "Beer garden",
+          "text": "Al aire libre, entre los muros de la fábrica. Texto de ejemplo: capacidad y tipo de eventos.",
+          "text__i18n__en": "Outdoors, within the mill's walls. Sample text: capacity and kind of events.",
+          "button_label": "Cotizar",
+          "button_label__i18n__en": "Request a quote",
+          "button_link": {
+            "id": "",
+            "url": "/venues#cotizar",
+            "linktype": "url",
+            "fieldtype": "multilink",
+            "cached_url": "/venues#cotizar"
+          },
+          "link_label": "Conocer más",
+          "link_label__i18n__en": "Learn more",
+          "link": {
+            "id": "",
+            "url": "/venues",
+            "linktype": "url",
+            "fieldtype": "multilink",
+            "cached_url": "/venues"
+          }
+        },
+        {
+          "_uid": "slide-r14",
+          "component": "slide",
+          "image": {
+            "id": null,
+            "filename": "/fotos/muro.jpg",
+            "alt": "Foto de ejemplo",
+            "fieldtype": "asset",
+            "name": "",
+            "title": "",
+            "focus": ""
+          },
+          "title": "Espacio de ejemplo",
+          "title__i18n__en": "Sample space",
+          "text": "Texto de ejemplo: el espacio, su capacidad y para qué eventos funciona mejor.",
+          "text__i18n__en": "Sample text: the space, its capacity and the events it suits best.",
+          "button_label": "Cotizar",
+          "button_label__i18n__en": "Request a quote",
+          "button_link": {
+            "id": "",
+            "url": "/venues#cotizar",
+            "linktype": "url",
+            "fieldtype": "multilink",
+            "cached_url": "/venues#cotizar"
+          },
+          "link_label": "Conocer más",
+          "link_label__i18n__en": "Learn more",
+          "link": {
+            "id": "",
+            "url": "/venues",
+            "linktype": "url",
+            "fieldtype": "multilink",
+            "cached_url": "/venues"
+          }
+        },
+        {
+          "_uid": "slide-r15",
+          "component": "slide",
+          "image": {
+            "id": null,
+            "filename": "/fotos/fabrica.jpg",
+            "alt": "Interior de la fábrica",
+            "fieldtype": "asset",
+            "name": "",
+            "title": "",
+            "focus": ""
+          },
+          "title": "Espacio de ejemplo",
+          "title__i18n__en": "Sample space",
+          "text": "Texto de ejemplo: dos o tres líneas que presentan el espacio.",
+          "text__i18n__en": "Sample text: two or three lines introducing the space.",
+          "button_label": "Cotizar",
+          "button_label__i18n__en": "Request a quote",
+          "button_link": {
+            "id": "",
+            "url": "/venues#cotizar",
+            "linktype": "url",
+            "fieldtype": "multilink",
+            "cached_url": "/venues#cotizar"
+          },
+          "link_label": "Conocer más",
+          "link_label__i18n__en": "Learn more",
+          "link": {
+            "id": "",
+            "url": "/venues",
+            "linktype": "url",
+            "fieldtype": "multilink",
+            "cached_url": "/venues"
+          }
+        }
+      ],
+      "title": "Venues",
+      "title__i18n__en": "Venues",
+      "intro": "Bodas, eventos privados y corporativos dentro de la fábrica.",
+      "intro__i18n__en": "Weddings, private and corporate events inside the mill."
+    },
+    {
+      "_uid": "feature-r17",
+      "component": "feature",
+      "image": {
+        "id": null,
+        "filename": "/fotos/letrero.jpg",
+        "alt": "Letrero antiguo pintado a mano en la fábrica",
+        "fieldtype": "asset",
+        "name": "",
+        "title": "",
+        "focus": ""
+      },
+      "image_side": "izquierda",
+      "title": "Una fábrica de 1846",
+      "title__i18n__en": "An 1846 mill",
+      "text": "Hércules ocupa una fábrica textil fundada en 1846, en la colonia que lleva su nombre.",
+      "text__i18n__en": "Hércules occupies a textile mill founded in 1846, in the neighborhood that bears its name.",
+      "link_label": "Conoce la historia",
+      "link_label__i18n__en": "Our history",
+      "link": {
+        "id": "",
+        "url": "/historia",
+        "linktype": "url",
+        "fieldtype": "multilink",
+        "cached_url": "/historia"
+      }
+    },
+    {
+      "_uid": "newsletter-9",
+      "component": "newsletter",
+      "title": "Lanzamientos y eventos en tu correo",
+      "title__i18n__en": "New releases and events in your inbox",
+      "text": "Te avisamos cuando salga una cerveza nueva o haya evento en el jardín.",
+      "text__i18n__en": "We'll let you know when a new beer is out or there's an event in the garden.",
+      "button_label": "Suscribirme",
+      "button_label__i18n__en": "Subscribe",
+      "placeholder": "tu@correo.com",
+      "placeholder__i18n__en": "you@email.com",
+      "success_message": "Listo, te escribiremos cuando haya algo nuevo.",
+      "success_message__i18n__en": "Done. We'll write when there's something new.",
+      "background": "arena"
+    }
+  ]
+}

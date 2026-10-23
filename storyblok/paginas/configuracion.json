@@ -1,0 +1,143 @@
+{
+  "_uid": "config-62",
+  "component": "config",
+  "menu": [
+    {
+      "_uid": "nav-63",
+      "component": "nav_link",
+      "link": {
+        "id": "",
+        "url": "/cerveceria",
+        "linktype": "url",
+        "fieldtype": "multilink",
+        "cached_url": "/cerveceria"
+      },
+      "label": "Cervecería",
+      "label__i18n__en": "Brewery"
+    },
+    {
+      "_uid": "nav-64",
+      "component": "nav_link",
+      "link": {
+        "id": "",
+        "url": "/jardin",
+        "linktype": "url",
+        "fieldtype": "multilink",
+        "cached_url": "/jardin"
+      },
+      "label": "Jardín",
+      "label__i18n__en": "Garden"
+    },
+    {
+      "_uid": "nav-65",
+      "component": "nav_link",
+      "link": {
+        "id": "",
+        "url": "/hotel",
+        "linktype": "url",
+        "fieldtype": "multilink",
+        "cached_url": "/hotel"
+      },
+      "label": "Hotel",
+      "label__i18n__en": "Hotel"
+    },
+    {
+      "_uid": "nav-66",
+      "component": "nav_link",
+      "link": {
+        "id": "",
+        "url": "/almacen",
+        "linktype": "url",
+        "fieldtype": "multilink",
+        "cached_url": "/almacen"
+      },
+      "label": "Almacén",
+      "label__i18n__en": "Shop"
+    },
+    {
+      "_uid": "nav-67",
+      "component": "nav_link",
+      "link": {
+        "id": "",
+        "url": "/venues",
+        "linktype": "url",
+        "fieldtype": "multilink",
+        "cached_url": "/venues"
+      },
+      "label": "Venues",
+      "label__i18n__en": "Venues"
+    },
+    {
+      "_uid": "nav-68",
+      "component": "nav_link",
+      "link": {
+        "id": "",
+        "url": "/historia",
+        "linktype": "url",
+        "fieldtype": "multilink",
+        "cached_url": "/historia"
+      },
+      "label": "Historia",
+      "label__i18n__en": "History"
+    }
+  ],
+  "secondary_menu": [
+    {
+      "_uid": "nav-69",
+      "component": "nav_link",
+      "link": {
+        "id": "",
+        "url": "/eventos",
+        "linktype": "url",
+        "fieldtype": "multilink",
+        "cached_url": "/eventos"
+      },
+      "label": "Eventos",
+      "label__i18n__en": "Events"
+    },
+    {
+      "_uid": "nav-70",
+      "component": "nav_link",
+      "link": {
+        "id": "",
+        "url": "/tours",
+        "linktype": "url",
+        "fieldtype": "multilink",
+        "cached_url": "/tours"
+      },
+      "label": "Tours",
+      "label__i18n__en": "Tours"
+    },
+    {
+      "_uid": "nav-71",
+      "component": "nav_link",
+      "link": {
+        "id": "",
+        "url": "/comunidad",
+        "linktype": "url",
+        "fieldtype": "multilink",
+        "cached_url": "/comunidad"
+      },
+      "label": "Comunidad",
+      "label__i18n__en": "Community"
+    },
+    {
+      "_uid": "nav-72",
+      "component": "nav_link",
+      "link": {
+        "id": "",
+        "url": "/blog",
+        "linktype": "url",
+        "fieldtype": "multilink",
+        "cached_url": "/blog"
+      },
+      "label": "Blog",
+      "label__i18n__en": "Blog"
+    }
+  ],
+  "address": "Colonia Hércules\nSantiago de Querétaro, México",
+  "address__i18n__en": "Hércules neighborhood\nSantiago de Querétaro, Mexico",
+  "instagram": "",
+  "facebook": "",
+  "email": ""
+}

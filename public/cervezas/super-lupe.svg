@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 440">
+<defs><linearGradient id="brillo" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".18"/><stop offset=".22" stop-color="#fff" stop-opacity=".28"/><stop offset=".4" stop-color="#fff" stop-opacity="0"/><stop offset=".85" stop-color="#000" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></linearGradient></defs>
+<rect x="26" y="14" width="188" height="26" rx="10" fill="#cfc8b8"/>
+<rect x="18" y="32" width="204" height="380" rx="18" fill="#4c472a"/>
+<rect x="18" y="250" width="204" height="70" fill="#9bbf3a"/>
+<rect x="26" y="404" width="188" height="22" rx="9" fill="#bdb6a6"/>
+<text x="120" y="190" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="30" fill="#f9f5e3">Súper Lupe</text>
+<text x="120" y="222" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" letter-spacing="3" fill="#f9f5e3" opacity=".85">HÉRCULES</text>
+<text x="120" y="370" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#f9f5e3" opacity=".8">lata de ejemplo</text>
+<rect x="18" y="32" width="204" height="380" rx="18" fill="url(#brillo)"/>
+</svg>

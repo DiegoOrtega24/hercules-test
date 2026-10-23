@@ -1,0 +1,196 @@
+@import "tailwindcss";
+
+/* Monument: coloca los archivos con licencia en /public/fonts con estos
+   nombres. Mientras no estén, el sitio usa Archivo (la del manual). */
+@font-face {
+  font-family: "Monument";
+  src: url("/fonts/Monument-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Monument";
+  src: url("/fonts/Monument-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Monument";
+  src: url("/fonts/Monument-MediumItalic.woff2") format("woff2");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* "tactil:" solo en pantallas sin mouse (celulares); "raton:" solo con mouse */
+@custom-variant tactil (@media (hover: none));
+@custom-variant raton (@media (hover: hover));
+
+/* Colores del Manual de identidad corporativa */
+@theme {
+  --color-crema: #f9f5e3;
+  --color-arena: #efe5cb;
+  --color-carbon: #1f2326;
+  --color-ambar: #fea600;
+  --color-olivo: #4c472a;
+  --color-ladrillo: #913826;
+  --color-malta: #5d2100;
+  --color-coral: #db4a36; /* Guía Web Tours: botones */
+
+  --font-display: "Monument", "Archivo", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Monument", "Archivo", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Márgenes y ancho máximo comunes a todo el sitio */
+@utility contenedor {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 1440px;
+  padding-inline: 1.5rem;
+  @media (width >= 48rem) { padding-inline: 2.5rem; }
+  @media (width >= 64rem) { padding-inline: 4rem; }
+}
+
+/* Fondo crema sólido del manual (sin textura, a petición del cliente) */
+html {
+  background-color: var(--color-crema);
+  color: var(--color-carbon);
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Títulos: Monument Medium Italic en mayúsculas (Guía Web Tours) */
+h1, h2, h3 {
+  font-weight: 500;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+/* Botones de la Guía Web Tours */
+.boton,
+.boton-secundario {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border: 1.5px solid;
+  padding: 0.7rem 1.7rem;
+  font-weight: 500;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+.boton {
+  background-color: var(--color-coral);
+  border-color: #fff;
+  color: #fff;
+}
+.boton:hover {
+  background-color: #c23d2b;
+}
+.boton-secundario {
+  background-color: #fff;
+  border-color: var(--color-coral);
+  color: var(--color-coral);
+}
+.boton-secundario:hover {
+  background-color: var(--color-coral);
+  color: #fff;
+}
+
+em, i { font-weight: 500; font-style: italic; }
+
+:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+/* Logo como máscara: toma el color del texto (original o negativo) */
+.logo {
+  display: inline-block;
+  aspect-ratio: 685 / 655;
+  background-color: currentColor;
+  -webkit-mask: url("/logo.svg") center / contain no-repeat;
+  mask: url("/logo.svg") center / contain no-repeat;
+}
+
+/* Paneles crema, igual que el fondo */
+.fondo-crema {
+  background-color: var(--color-crema);
+}
+
+/* Carrusel: va de orilla a orilla, pero alineado con el margen del sitio */
+.carril {
+  --margen: 1.5rem;
+  padding-inline: max(var(--margen), calc((100% - 1440px) / 2 + var(--margen)));
+  scroll-padding-inline: max(var(--margen), calc((100% - 1440px) / 2 + var(--margen)));
+  scrollbar-width: none;
+}
+.carril::-webkit-scrollbar { display: none; }
+@media (width >= 48rem) { .carril { --margen: 2.5rem; } }
+@media (width >= 64rem) { .carril { --margen: 4rem; } }
+
+/* Bandas de material: textura real de la fábrica con un color del manual
+   encima (página "Texturas" del manual) */
+.textura-ladrillo {
+  background: linear-gradient(rgb(31 35 38 / 0.8), rgb(31 35 38 / 0.8)),
+    url("/texturas/ladrillo.jpg") center / cover;
+}
+.textura-oxido {
+  background: linear-gradient(rgb(93 33 0 / 0.78), rgb(93 33 0 / 0.78)),
+    url("/texturas/oxido.jpg") center 75% / cover;
+}
+.textura-muro {
+  background: linear-gradient(rgb(76 71 42 / 0.78), rgb(76 71 42 / 0.78)),
+    url("/texturas/muro-agrietado.jpg") center bottom / cover;
+}
+.textura-arena {
+  background: linear-gradient(rgb(239 229 203 / 0.62), rgb(239 229 203 / 0.62)),
+    url("/texturas/oxido.jpg") center 30% / cover;
+}
+
+/* Movimiento sutil al hacer scroll. Solo en navegadores que lo soportan;
+   en los demás todo se ve igual pero quieto. */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .aparece {
+      animation: aparece linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 40%;
+    }
+    .paralaje {
+      overflow: hidden;
+    }
+    .paralaje > img {
+      scale: 1.12;
+      animation: paralaje linear both;
+      animation-timeline: view();
+    }
+  }
+}
+
+@keyframes aparece {
+  from { opacity: 0; translate: 0 2rem; }
+  to { opacity: 1; translate: 0 0; }
+}
+
+@keyframes paralaje {
+  from { translate: 0 -5%; }
+  to { translate: 0 5%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}

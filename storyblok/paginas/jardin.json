@@ -1,0 +1,180 @@
+{
+  "_uid": "page-27",
+  "component": "page",
+  "seo_title": "Jardín de cerveza | Compañía Cervecera Hércules",
+  "seo_title__i18n__en": "Beer garden | Compañía Cervecera Hércules",
+  "seo_description": "Cerveza fresca, comida y la fábrica de fondo en Querétaro.",
+  "seo_description__i18n__en": "Fresh beer, good food and the old mill as a backdrop in Querétaro.",
+  "body": [
+    {
+      "_uid": "hero-19",
+      "component": "hero",
+      "image": {
+        "id": null,
+        "filename": "/fotos/jardin-noche.jpg",
+        "alt": "Amigos brindando en el jardín de noche",
+        "fieldtype": "asset",
+        "name": "",
+        "title": "",
+        "focus": ""
+      },
+      "size": "media",
+      "title": "Jardín de cerveza",
+      "title__i18n__en": "Beer garden",
+      "subtitle": "Cerveza fresca, comida y la fábrica de fondo.",
+      "subtitle__i18n__en": "Fresh beer, good food and the old mill as a backdrop."
+    },
+    {
+      "_uid": "text-20",
+      "component": "text_block",
+      "style": "destacado",
+      "body": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Texto de ejemplo: el ambiente del jardín, la música, la comida y para quién es este lugar."
+              }
+            ]
+          }
+        ]
+      },
+      "body__i18n__en": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Sample text: the feel of the garden, the music, the food and who it's for."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "_uid": "carousel-r27",
+      "component": "carousel",
+      "items": [
+        {
+          "_uid": "slide-r23",
+          "component": "slide",
+          "image": {
+            "id": null,
+            "filename": "/fotos/jardin-noche.jpg",
+            "alt": "Jardín de noche",
+            "fieldtype": "asset",
+            "name": "",
+            "title": "",
+            "focus": ""
+          }
+        },
+        {
+          "_uid": "slide-r24",
+          "component": "slide",
+          "image": {
+            "id": null,
+            "filename": "/fotos/comida.jpg",
+            "alt": "Comida del jardín",
+            "fieldtype": "asset",
+            "name": "",
+            "title": "",
+            "focus": ""
+          }
+        },
+        {
+          "_uid": "slide-r25",
+          "component": "slide",
+          "image": {
+            "id": null,
+            "filename": "/fotos/cerveza-espuma.jpg",
+            "alt": "Cerveza recién servida",
+            "fieldtype": "asset",
+            "name": "",
+            "title": "",
+            "focus": ""
+          }
+        },
+        {
+          "_uid": "slide-r26",
+          "component": "slide",
+          "image": {
+            "id": null,
+            "filename": "/fotos/agave.jpg",
+            "alt": "Agaves",
+            "fieldtype": "asset",
+            "name": "",
+            "title": "",
+            "focus": ""
+          }
+        }
+      ],
+      "title": "El jardín",
+      "title__i18n__en": "The garden"
+    },
+    {
+      "_uid": "details-25",
+      "component": "details",
+      "rows": [
+        {
+          "_uid": "row-22",
+          "component": "detail_row",
+          "label": "Horario",
+          "label__i18n__en": "Hours",
+          "value": "Por confirmar",
+          "value__i18n__en": "To be confirmed"
+        },
+        {
+          "_uid": "row-23",
+          "component": "detail_row",
+          "label": "Dirección",
+          "label__i18n__en": "Address",
+          "value": "Colonia Hércules\nSantiago de Querétaro",
+          "value__i18n__en": "Hércules neighborhood\nSantiago de Querétaro"
+        },
+        {
+          "_uid": "row-24",
+          "component": "detail_row",
+          "label": "Reservaciones",
+          "label__i18n__en": "Reservations",
+          "value": "Por confirmar",
+          "value__i18n__en": "To be confirmed"
+        }
+      ],
+      "title": "Visítanos",
+      "title__i18n__en": "Visit us",
+      "link_label": "Cómo llegar",
+      "link_label__i18n__en": "Get directions",
+      "link": {
+        "id": "",
+        "url": "https://www.google.com/maps/search/?api=1&query=Cervecer%C3%ADa+H%C3%A9rcules+Quer%C3%A9taro",
+        "linktype": "url",
+        "fieldtype": "multilink",
+        "cached_url": "https://www.google.com/maps/search/?api=1&query=Cervecer%C3%ADa+H%C3%A9rcules+Quer%C3%A9taro"
+      }
+    },
+    {
+      "_uid": "cta-26",
+      "component": "cta",
+      "background": "carbon",
+      "link": {
+        "id": "",
+        "url": "/venues",
+        "linktype": "url",
+        "fieldtype": "multilink",
+        "cached_url": "/venues"
+      },
+      "title": "¿Celebras algo?",
+      "title__i18n__en": "Celebrating something?",
+      "text": "Organiza tu evento en el jardín o en otro espacio de la fábrica.",
+      "text__i18n__en": "Host your event in the garden or another space in the mill.",
+      "button_label": "Cotizar evento",
+      "button_label__i18n__en": "Request a quote"
+    }
+  ]
+}

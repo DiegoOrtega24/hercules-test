@@ -1,0 +1,190 @@
+{
+  "_uid": "page-18",
+  "component": "page",
+  "seo_title": "Cervecería | Compañía Cervecera Hércules",
+  "seo_title__i18n__en": "Brewery | Compañía Cervecera Hércules",
+  "seo_description": "Cervezas de línea y de temporada hechas en una fábrica textil de 1846 en Querétaro.",
+  "seo_description__i18n__en": "Year-round and seasonal beers brewed in an 1846 textile mill in Querétaro.",
+  "body": [
+    {
+      "_uid": "hero-10",
+      "component": "hero",
+      "image": {
+        "id": null,
+        "filename": "/fotos/lupulo.jpg",
+        "alt": "Lúpulo cayendo en la olla de cocción",
+        "fieldtype": "asset",
+        "name": "",
+        "title": "",
+        "focus": ""
+      },
+      "size": "media",
+      "title": "Cervecería",
+      "title__i18n__en": "Brewery",
+      "subtitle": "Cervezas hechas dentro de una fábrica textil de 1846.",
+      "subtitle__i18n__en": "Beers brewed inside an 1846 textile mill.",
+      "hercules": true
+    },
+    {
+      "_uid": "text-11",
+      "component": "text_block",
+      "style": "centrado",
+      "body": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Texto de ejemplo: aquí va cómo hacemos cerveza, los ingredientes que usamos y quién está detrás de cada lote."
+              }
+            ]
+          }
+        ]
+      },
+      "body__i18n__en": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Sample text: how we brew, the ingredients we use and the people behind every batch."
+              }
+            ]
+          }
+        ]
+      },
+      "title": "Cómo hacemos cerveza",
+      "title__i18n__en": "How we brew",
+      "button_label": "Reservar un tour",
+      "button_label__i18n__en": "Book a tour",
+      "button_link": {
+        "id": "",
+        "url": "/tours",
+        "linktype": "url",
+        "fieldtype": "multilink",
+        "cached_url": "/tours"
+      }
+    },
+    {
+      "_uid": "beer-list-1",
+      "component": "beer_list",
+      "title": "Nuestras cervezas",
+      "title__i18n__en": "Our beers",
+      "intro": "Cada cerveza se captura una vez en Storyblok, en la carpeta Cervezas, y aparece aquí sola.",
+      "intro__i18n__en": "Each beer is entered once in Storyblok, in the Beers folder, and shows up here automatically.",
+      "filter": "todas",
+      "limit": "",
+      "link_label": "Ver más",
+      "link_label__i18n__en": "See more"
+    },
+    {
+      "_uid": "carousel-r22",
+      "component": "carousel",
+      "items": [
+        {
+          "_uid": "slide-r18",
+          "component": "slide",
+          "image": {
+            "id": null,
+            "filename": "/fotos/lupulo.jpg",
+            "alt": "Lúpulo",
+            "fieldtype": "asset",
+            "name": "",
+            "title": "",
+            "focus": ""
+          }
+        },
+        {
+          "_uid": "slide-r19",
+          "component": "slide",
+          "image": {
+            "id": null,
+            "filename": "/fotos/almacen.jpg",
+            "alt": "Almacén Hércules",
+            "fieldtype": "asset",
+            "name": "",
+            "title": "",
+            "focus": ""
+          }
+        },
+        {
+          "_uid": "slide-r20",
+          "component": "slide",
+          "image": {
+            "id": null,
+            "filename": "/fotos/cerveza-espuma.jpg",
+            "alt": "Cerveza recién servida",
+            "fieldtype": "asset",
+            "name": "",
+            "title": "",
+            "focus": ""
+          }
+        },
+        {
+          "_uid": "slide-r21",
+          "component": "slide",
+          "image": {
+            "id": null,
+            "filename": "/fotos/cerveza-vaso.jpg",
+            "alt": "Vaso de cerveza",
+            "fieldtype": "asset",
+            "name": "",
+            "title": "",
+            "focus": ""
+          }
+        }
+      ],
+      "title": "Dentro de la cervecería",
+      "title__i18n__en": "Inside the brewery"
+    },
+    {
+      "_uid": "feature-16",
+      "component": "feature",
+      "image": {
+        "id": null,
+        "filename": "/fotos/almacen.jpg",
+        "alt": "Almacén Hércules de noche",
+        "fieldtype": "asset",
+        "name": "",
+        "title": "",
+        "focus": ""
+      },
+      "image_side": "derecha",
+      "title": "Tours de la cervecería",
+      "title__i18n__en": "Brewery tours",
+      "text": "Recorre la fábrica y prueba las cervezas donde se hacen.",
+      "text__i18n__en": "Walk through the mill and taste the beers where they're made.",
+      "link_label": "Reservar tour",
+      "link_label__i18n__en": "Book a tour",
+      "link": {
+        "id": "",
+        "url": "/tours",
+        "linktype": "url",
+        "fieldtype": "multilink",
+        "cached_url": "/tours"
+      }
+    },
+    {
+      "_uid": "cta-17",
+      "component": "cta",
+      "background": "arena",
+      "link": {
+        "id": "",
+        "url": "/jardin",
+        "linktype": "url",
+        "fieldtype": "multilink",
+        "cached_url": "/jardin"
+      },
+      "title": "Pruébalas en el jardín",
+      "title__i18n__en": "Try them in the garden",
+      "text": "Todas nuestras cervezas se sirven en el jardín de cerveza.",
+      "text__i18n__en": "Every beer we brew is on tap in the beer garden.",
+      "button_label": "Ver horarios",
+      "button_label__i18n__en": "See hours"
+    }
+  ]
+}

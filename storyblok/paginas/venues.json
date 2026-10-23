@@ -1,0 +1,236 @@
+{
+  "_uid": "page-54",
+  "component": "page",
+  "seo_title": "Venues | Compañía Cervecera Hércules",
+  "seo_title__i18n__en": "Venues | Compañía Cervecera Hércules",
+  "seo_description": "Bodas, eventos privados y corporativos en una fábrica de 1846 en Querétaro.",
+  "seo_description__i18n__en": "Weddings, private and corporate events in an 1846 mill in Querétaro.",
+  "body": [
+    {
+      "_uid": "hero-43",
+      "component": "hero",
+      "image": {
+        "id": null,
+        "filename": "/fotos/almacen.jpg",
+        "alt": "Almacén Hércules iluminado de noche",
+        "fieldtype": "asset",
+        "name": "",
+        "title": "",
+        "focus": ""
+      },
+      "size": "media",
+      "title": "Venues",
+      "title__i18n__en": "Venues",
+      "subtitle": "Bodas, eventos privados y corporativos dentro de la fábrica.",
+      "subtitle__i18n__en": "Weddings, private and corporate events inside the mill."
+    },
+    {
+      "_uid": "text-44",
+      "component": "text_block",
+      "style": "destacado",
+      "body": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Texto de ejemplo: los espacios de la fábrica y el tipo de eventos que reciben."
+              }
+            ]
+          }
+        ]
+      },
+      "body__i18n__en": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Sample text: the mill's spaces and the kind of events they host."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "_uid": "carousel-r37",
+      "component": "carousel",
+      "items": [
+        {
+          "_uid": "slide-r33",
+          "component": "slide",
+          "image": {
+            "id": null,
+            "filename": "/fotos/letrero.jpg",
+            "alt": "Letrero antiguo de la fábrica",
+            "fieldtype": "asset",
+            "name": "",
+            "title": "",
+            "focus": ""
+          }
+        },
+        {
+          "_uid": "slide-r34",
+          "component": "slide",
+          "image": {
+            "id": null,
+            "filename": "/fotos/jardin-noche.jpg",
+            "alt": "Jardín de cerveza",
+            "fieldtype": "asset",
+            "name": "",
+            "title": "",
+            "focus": ""
+          }
+        },
+        {
+          "_uid": "slide-r35",
+          "component": "slide",
+          "image": {
+            "id": null,
+            "filename": "/fotos/fabrica.jpg",
+            "alt": "Interior de la fábrica",
+            "fieldtype": "asset",
+            "name": "",
+            "title": "",
+            "focus": ""
+          }
+        },
+        {
+          "_uid": "slide-r36",
+          "component": "slide",
+          "image": {
+            "id": null,
+            "filename": "/fotos/muro.jpg",
+            "alt": "Muro de la fábrica",
+            "fieldtype": "asset",
+            "name": "",
+            "title": "",
+            "focus": ""
+          }
+        }
+      ],
+      "title": "Los espacios",
+      "title__i18n__en": "The spaces"
+    },
+    {
+      "_uid": "cards-48",
+      "component": "cards",
+      "items": [
+        {
+          "_uid": "card-45",
+          "component": "card",
+          "image": {
+            "id": null,
+            "filename": "/fotos/jardin-noche.jpg",
+            "alt": "Jardín de cerveza de noche",
+            "fieldtype": "asset",
+            "name": "",
+            "title": "",
+            "focus": ""
+          },
+          "title": "Jardín de cerveza",
+          "title__i18n__en": "Beer garden",
+          "detail": "Capacidad por confirmar",
+          "detail__i18n__en": "Capacity to be confirmed",
+          "text": "Texto de ejemplo: aquí va la descripción que escriba Hércules.",
+          "text__i18n__en": "Sample text: Hércules's own description goes here."
+        },
+        {
+          "_uid": "card-46",
+          "component": "card",
+          "image": {
+            "id": null,
+            "filename": "/fotos/muro.jpg",
+            "alt": "Foto de ejemplo",
+            "fieldtype": "asset",
+            "name": "",
+            "title": "",
+            "focus": ""
+          },
+          "title": "Espacio de ejemplo",
+          "title__i18n__en": "Sample space",
+          "detail": "Capacidad por confirmar",
+          "detail__i18n__en": "Capacity to be confirmed",
+          "text": "Texto de ejemplo: aquí va la descripción que escriba Hércules.",
+          "text__i18n__en": "Sample text: Hércules's own description goes here."
+        },
+        {
+          "_uid": "card-47",
+          "component": "card",
+          "image": {
+            "id": null,
+            "filename": "/fotos/fabrica.jpg",
+            "alt": "Foto de ejemplo",
+            "fieldtype": "asset",
+            "name": "",
+            "title": "",
+            "focus": ""
+          },
+          "title": "Espacio de ejemplo",
+          "title__i18n__en": "Sample space",
+          "detail": "Capacidad por confirmar",
+          "detail__i18n__en": "Capacity to be confirmed",
+          "text": "Texto de ejemplo: aquí va la descripción que escriba Hércules.",
+          "text__i18n__en": "Sample text: Hércules's own description goes here."
+        }
+      ],
+      "title": "Espacios",
+      "title__i18n__en": "Spaces"
+    },
+    {
+      "_uid": "details-52",
+      "component": "details",
+      "rows": [
+        {
+          "_uid": "row-49",
+          "component": "detail_row",
+          "label": "Capacidad",
+          "label__i18n__en": "Capacity",
+          "value": "Por confirmar",
+          "value__i18n__en": "To be confirmed"
+        },
+        {
+          "_uid": "row-50",
+          "component": "detail_row",
+          "label": "Comida y bebida",
+          "label__i18n__en": "Food and drinks",
+          "value": "Por confirmar",
+          "value__i18n__en": "To be confirmed"
+        },
+        {
+          "_uid": "row-51",
+          "component": "detail_row",
+          "label": "Fechas disponibles",
+          "label__i18n__en": "Available dates",
+          "value": "Por confirmar",
+          "value__i18n__en": "To be confirmed"
+        }
+      ],
+      "title": "Qué incluye",
+      "title__i18n__en": "What's included"
+    },
+    {
+      "_uid": "cta-53",
+      "component": "cta",
+      "background": "arena",
+      "link": {
+        "id": "",
+        "url": "#cotizar",
+        "linktype": "url",
+        "fieldtype": "multilink",
+        "cached_url": "#cotizar"
+      },
+      "title": "Cotiza tu evento",
+      "title__i18n__en": "Request a quote",
+      "text": "Cuéntanos la fecha, el número de invitados y el tipo de evento.",
+      "text__i18n__en": "Tell us the date, the number of guests and the kind of event.",
+      "button_label": "Escríbenos",
+      "button_label__i18n__en": "Get in touch"
+    }
+  ]
+}

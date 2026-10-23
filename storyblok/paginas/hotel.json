@@ -1,0 +1,233 @@
+{
+  "_uid": "page-35",
+  "component": "page",
+  "seo_title": "Hotel | Compañía Cervecera Hércules",
+  "seo_title__i18n__en": "Hotel | Compañía Cervecera Hércules",
+  "seo_description": "Habitaciones dentro de una fábrica textil de 1846 en Querétaro.",
+  "seo_description__i18n__en": "Rooms inside an 1846 textile mill in Querétaro.",
+  "body": [
+    {
+      "_uid": "hero-28",
+      "component": "hero",
+      "image": {
+        "id": null,
+        "filename": "/fotos/vista-aerea.jpg",
+        "alt": "Vista aérea de la colonia Hércules al atardecer",
+        "fieldtype": "asset",
+        "name": "",
+        "title": "",
+        "focus": ""
+      },
+      "size": "media",
+      "title": "Hotel",
+      "title__i18n__en": "Hotel",
+      "subtitle": "Habitaciones en una fábrica textil de 1846, a unos pasos del jardín.",
+      "subtitle__i18n__en": "Rooms in an 1846 textile mill, steps from the beer garden."
+    },
+    {
+      "_uid": "text-29",
+      "component": "text_block",
+      "style": "normal",
+      "body": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Texto de ejemplo: qué se siente dormir dentro de la fábrica y qué incluye la estancia."
+              }
+            ]
+          }
+        ]
+      },
+      "body__i18n__en": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Sample text: what it's like to sleep inside the mill and what a stay includes."
+              }
+            ]
+          }
+        ]
+      },
+      "title": "Dormir en la fábrica",
+      "title__i18n__en": "Sleep in the mill"
+    },
+    {
+      "_uid": "carousel-r32",
+      "component": "carousel",
+      "items": [
+        {
+          "_uid": "slide-r28",
+          "component": "slide",
+          "image": {
+            "id": null,
+            "filename": "/fotos/vista-aerea.jpg",
+            "alt": "Vista aérea",
+            "fieldtype": "asset",
+            "name": "",
+            "title": "",
+            "focus": ""
+          }
+        },
+        {
+          "_uid": "slide-r29",
+          "component": "slide",
+          "image": {
+            "id": null,
+            "filename": "/fotos/muro.jpg",
+            "alt": "Muro de la fábrica",
+            "fieldtype": "asset",
+            "name": "",
+            "title": "",
+            "focus": ""
+          }
+        },
+        {
+          "_uid": "slide-r30",
+          "component": "slide",
+          "image": {
+            "id": null,
+            "filename": "/fotos/letrero.jpg",
+            "alt": "Letrero antiguo",
+            "fieldtype": "asset",
+            "name": "",
+            "title": "",
+            "focus": ""
+          }
+        },
+        {
+          "_uid": "slide-r31",
+          "component": "slide",
+          "image": {
+            "id": null,
+            "filename": "/fotos/fabrica.jpg",
+            "alt": "Interior de la fábrica",
+            "fieldtype": "asset",
+            "name": "",
+            "title": "",
+            "focus": ""
+          }
+        }
+      ],
+      "title": "El hotel",
+      "title__i18n__en": "The hotel"
+    },
+    {
+      "_uid": "cards-33",
+      "component": "cards",
+      "items": [
+        {
+          "_uid": "card-30",
+          "component": "card",
+          "image": {
+            "id": null,
+            "filename": "/fotos/muro.jpg",
+            "alt": "Foto de ejemplo",
+            "fieldtype": "asset",
+            "name": "",
+            "title": "",
+            "focus": ""
+          },
+          "title": "Habitación doble",
+          "title__i18n__en": "Double room",
+          "detail": "Tarifa por confirmar",
+          "detail__i18n__en": "Rate to be confirmed",
+          "text": "Foto y texto de ejemplo.",
+          "text__i18n__en": "Sample photo and text.",
+          "link_label": "Reservar",
+          "link_label__i18n__en": "Book",
+          "link": {
+            "id": "",
+            "url": "#reservar",
+            "linktype": "url",
+            "fieldtype": "multilink",
+            "cached_url": "#reservar"
+          }
+        },
+        {
+          "_uid": "card-31",
+          "component": "card",
+          "image": {
+            "id": null,
+            "filename": "/fotos/letrero.jpg",
+            "alt": "Foto de ejemplo",
+            "fieldtype": "asset",
+            "name": "",
+            "title": "",
+            "focus": ""
+          },
+          "title": "Suite",
+          "title__i18n__en": "Suite",
+          "detail": "Tarifa por confirmar",
+          "detail__i18n__en": "Rate to be confirmed",
+          "text": "Foto y texto de ejemplo.",
+          "text__i18n__en": "Sample photo and text.",
+          "link_label": "Reservar",
+          "link_label__i18n__en": "Book",
+          "link": {
+            "id": "",
+            "url": "#reservar",
+            "linktype": "url",
+            "fieldtype": "multilink",
+            "cached_url": "#reservar"
+          }
+        },
+        {
+          "_uid": "card-32",
+          "component": "card",
+          "image": {
+            "id": null,
+            "filename": "/fotos/fabrica.jpg",
+            "alt": "Foto de ejemplo",
+            "fieldtype": "asset",
+            "name": "",
+            "title": "",
+            "focus": ""
+          },
+          "title": "Habitación sencilla",
+          "title__i18n__en": "Single room",
+          "detail": "Tarifa por confirmar",
+          "detail__i18n__en": "Rate to be confirmed",
+          "text": "Foto y texto de ejemplo.",
+          "text__i18n__en": "Sample photo and text.",
+          "link_label": "Reservar",
+          "link_label__i18n__en": "Book",
+          "link": {
+            "id": "",
+            "url": "#reservar",
+            "linktype": "url",
+            "fieldtype": "multilink",
+            "cached_url": "#reservar"
+          }
+        }
+      ],
+      "title": "Habitaciones",
+      "title__i18n__en": "Rooms"
+    },
+    {
+      "_uid": "cta-34",
+      "component": "cta",
+      "background": "carbon",
+      "link": {
+        "id": "",
+        "url": "#reservar",
+        "linktype": "url",
+        "fieldtype": "multilink",
+        "cached_url": "#reservar"
+      },
+      "title": "Reserva tu estancia",
+      "title__i18n__en": "Book your stay",
+      "text": "Este botón se conectará al motor de reservas del hotel.",
+      "text__i18n__en": "This button will connect to the hotel's booking engine.",
+      "button_label": "Reservar",
+      "button_label__i18n__en": "Book now"
+    }
+  ]
+}

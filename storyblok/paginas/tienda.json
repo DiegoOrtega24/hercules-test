@@ -1,0 +1,157 @@
+{
+  "_uid": "page-42",
+  "component": "page",
+  "seo_title": "Tienda en línea | Compañía Cervecera Hércules",
+  "seo_title__i18n__en": "Online shop | Compañía Cervecera Hércules",
+  "seo_description": "Cerveza y artículos de la marca Hércules.",
+  "seo_description__i18n__en": "Hércules beer and branded goods.",
+  "body": [
+    {
+      "_uid": "hero-36",
+      "component": "hero",
+      "image": {
+        "id": null,
+        "filename": "/fotos/cerveza-vaso.jpg",
+        "alt": "Vaso de cerveza con el logo de Hércules",
+        "fieldtype": "asset",
+        "name": "",
+        "title": "",
+        "focus": ""
+      },
+      "size": "media",
+      "title": "Tienda en línea",
+      "title__i18n__en": "Online shop",
+      "subtitle": "Cerveza y artículos de la marca.",
+      "subtitle__i18n__en": "Beer and Hércules goods."
+    },
+    {
+      "_uid": "cards-40",
+      "component": "cards",
+      "items": [
+        {
+          "_uid": "card-37",
+          "component": "card",
+          "image": {
+            "id": null,
+            "filename": "/fotos/cerveza-espuma.jpg",
+            "alt": "Producto de ejemplo",
+            "fieldtype": "asset",
+            "name": "",
+            "title": "",
+            "focus": ""
+          },
+          "title": "Paquete de cervezas",
+          "title__i18n__en": "Beer pack",
+          "detail": "Precio de ejemplo",
+          "detail__i18n__en": "Sample price",
+          "text": "Texto de ejemplo: aquí va la descripción que escriba Hércules.",
+          "text__i18n__en": "Sample text: Hércules's own description goes here.",
+          "link_label": "Ver producto",
+          "link_label__i18n__en": "View product",
+          "link": {
+            "id": "",
+            "url": "#",
+            "linktype": "url",
+            "fieldtype": "multilink",
+            "cached_url": "#"
+          }
+        },
+        {
+          "_uid": "card-38",
+          "component": "card",
+          "image": {
+            "id": null,
+            "filename": "/fotos/cerveza-vaso.jpg",
+            "alt": "Producto de ejemplo",
+            "fieldtype": "asset",
+            "name": "",
+            "title": "",
+            "focus": ""
+          },
+          "title": "Vaso Hércules",
+          "title__i18n__en": "Hércules glass",
+          "detail": "Precio de ejemplo",
+          "detail__i18n__en": "Sample price",
+          "text": "Texto de ejemplo: aquí va la descripción que escriba Hércules.",
+          "text__i18n__en": "Sample text: Hércules's own description goes here.",
+          "link_label": "Ver producto",
+          "link_label__i18n__en": "View product",
+          "link": {
+            "id": "",
+            "url": "#",
+            "linktype": "url",
+            "fieldtype": "multilink",
+            "cached_url": "#"
+          }
+        },
+        {
+          "_uid": "card-39",
+          "component": "card",
+          "image": {
+            "id": null,
+            "filename": "/fotos/agave.jpg",
+            "alt": "Producto de ejemplo",
+            "fieldtype": "asset",
+            "name": "",
+            "title": "",
+            "focus": ""
+          },
+          "title": "Playera",
+          "title__i18n__en": "T-shirt",
+          "detail": "Precio de ejemplo",
+          "detail__i18n__en": "Sample price",
+          "text": "Texto de ejemplo: aquí va la descripción que escriba Hércules.",
+          "text__i18n__en": "Sample text: Hércules's own description goes here.",
+          "link_label": "Ver producto",
+          "link_label__i18n__en": "View product",
+          "link": {
+            "id": "",
+            "url": "#",
+            "linktype": "url",
+            "fieldtype": "multilink",
+            "cached_url": "#"
+          }
+        }
+      ],
+      "title": "Productos",
+      "title__i18n__en": "Products",
+      "intro": "Productos de ejemplo. La plataforma de la tienda se define en la fase 2.",
+      "intro__i18n__en": "Sample products. The shop platform will be chosen in phase 2."
+    },
+    {
+      "_uid": "text-41",
+      "component": "text_block",
+      "style": "normal",
+      "body": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Texto de ejemplo: zonas de envío, tiempos de entrega y venta solo a mayores de 18 años."
+              }
+            ]
+          }
+        ]
+      },
+      "body__i18n__en": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Sample text: shipping zones, delivery times, and sales to adults 18+ only."
+              }
+            ]
+          }
+        ]
+      },
+      "title": "Envíos",
+      "title__i18n__en": "Shipping"
+    }
+  ]
+}

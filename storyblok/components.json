@@ -1,0 +1,809 @@
+[
+  {
+    "name": "page",
+    "display_name": "Página",
+    "is_root": true,
+    "is_nestable": false,
+    "schema": {
+      "body": {
+        "type": "bloks",
+        "pos": 0,
+        "display_name": "Bloques",
+        "restrict_components": true,
+        "component_whitelist": [
+          "hero",
+          "feature",
+          "text_block",
+          "gallery",
+          "carousel",
+          "cards",
+          "beer_list",
+          "details",
+          "cta",
+          "newsletter"
+        ]
+      },
+      "seo_title": {
+        "type": "text",
+        "pos": 1,
+        "display_name": "Título para Google",
+        "translatable": true
+      },
+      "seo_description": {
+        "type": "textarea",
+        "pos": 2,
+        "display_name": "Descripción para Google",
+        "translatable": true,
+        "max_length": 160
+      }
+    }
+  },
+  {
+    "name": "config",
+    "display_name": "Configuración del sitio",
+    "is_root": true,
+    "is_nestable": false,
+    "schema": {
+      "menu": {
+        "type": "bloks",
+        "pos": 0,
+        "display_name": "Menú principal",
+        "restrict_components": true,
+        "component_whitelist": [
+          "nav_link"
+        ]
+      },
+      "secondary_menu": {
+        "type": "bloks",
+        "pos": 1,
+        "display_name": "Menú del pie de página",
+        "restrict_components": true,
+        "component_whitelist": [
+          "nav_link"
+        ]
+      },
+      "address": {
+        "type": "textarea",
+        "pos": 2,
+        "display_name": "Dirección",
+        "translatable": true
+      },
+      "email": {
+        "type": "text",
+        "pos": 3,
+        "display_name": "Correo"
+      },
+      "instagram": {
+        "type": "text",
+        "pos": 4,
+        "display_name": "Instagram (URL)"
+      },
+      "facebook": {
+        "type": "text",
+        "pos": 5,
+        "display_name": "Facebook (URL)"
+      }
+    }
+  },
+  {
+    "name": "nav_link",
+    "display_name": "Enlace de menú",
+    "is_root": false,
+    "is_nestable": true,
+    "schema": {
+      "label": {
+        "type": "text",
+        "pos": 0,
+        "display_name": "Texto",
+        "translatable": true,
+        "required": true
+      },
+      "link": {
+        "type": "multilink",
+        "pos": 1,
+        "display_name": "Enlace"
+      }
+    }
+  },
+  {
+    "name": "hero",
+    "display_name": "Portada",
+    "is_root": false,
+    "is_nestable": true,
+    "schema": {
+      "image": {
+        "type": "asset",
+        "pos": 0,
+        "display_name": "Foto",
+        "filetypes": [
+          "images"
+        ],
+        "required": true
+      },
+      "title": {
+        "type": "text",
+        "pos": 1,
+        "display_name": "Título",
+        "translatable": true,
+        "required": true
+      },
+      "subtitle": {
+        "type": "textarea",
+        "pos": 2,
+        "display_name": "Subtítulo",
+        "translatable": true
+      },
+      "size": {
+        "type": "option",
+        "pos": 3,
+        "display_name": "Tamaño",
+        "options": [
+          {
+            "name": "Media (páginas interiores)",
+            "value": "media"
+          },
+          {
+            "name": "Pantalla completa, con foto o carrusel (Home)",
+            "value": "completa"
+          }
+        ],
+        "default_value": "media"
+      },
+      "hercules": {
+        "type": "boolean",
+        "pos": 5,
+        "display_name": "Hércules que se llena al hacer scroll (solo tamaño media)"
+      },
+      "images": {
+        "type": "multiasset",
+        "pos": 6,
+        "display_name": "Carrusel de fotos (solo pantalla completa; si hay 2 o más, cambian solas)",
+        "filetypes": [
+          "images"
+        ]
+      }
+    }
+  },
+  {
+    "name": "feature",
+    "display_name": "Sección con foto",
+    "is_root": false,
+    "is_nestable": true,
+    "schema": {
+      "image": {
+        "type": "asset",
+        "pos": 0,
+        "display_name": "Foto",
+        "filetypes": [
+          "images"
+        ],
+        "required": true
+      },
+      "title": {
+        "type": "text",
+        "pos": 1,
+        "display_name": "Título",
+        "translatable": true,
+        "required": true
+      },
+      "text": {
+        "type": "textarea",
+        "pos": 2,
+        "display_name": "Texto",
+        "translatable": true
+      },
+      "link_label": {
+        "type": "text",
+        "pos": 5,
+        "display_name": "Texto del enlace secundario (ej. Conocer más)",
+        "translatable": true
+      },
+      "link": {
+        "type": "multilink",
+        "pos": 6,
+        "display_name": "Enlace secundario"
+      },
+      "image_side": {
+        "type": "option",
+        "pos": 7,
+        "display_name": "Lado de la foto",
+        "options": [
+          {
+            "name": "Izquierda",
+            "value": "izquierda"
+          },
+          {
+            "name": "Derecha",
+            "value": "derecha"
+          }
+        ],
+        "default_value": "izquierda"
+      },
+      "logo": {
+        "type": "asset",
+        "pos": 8,
+        "display_name": "Logo del venue (oscuro, PNG o SVG transparente). Con logo, el texto aparece al pasar el mouse o el dedo",
+        "filetypes": [
+          "images"
+        ]
+      },
+      "button_label": {
+        "type": "text",
+        "pos": 3,
+        "display_name": "Texto del botón principal (ej. Reservar, Comprar ahora)",
+        "translatable": true
+      },
+      "button_link": {
+        "type": "multilink",
+        "pos": 4,
+        "display_name": "Enlace del botón principal"
+      }
+    }
+  },
+  {
+    "name": "text_block",
+    "display_name": "Texto",
+    "is_root": false,
+    "is_nestable": true,
+    "schema": {
+      "style": {
+        "type": "option",
+        "pos": 0,
+        "display_name": "Estilo",
+        "options": [
+          {
+            "name": "Normal, con título a la izquierda",
+            "value": "normal"
+          },
+          {
+            "name": "Destacado, frase grande",
+            "value": "destacado"
+          },
+          {
+            "name": "Centrado (formato tours)",
+            "value": "centrado"
+          }
+        ],
+        "default_value": "normal"
+      },
+      "title": {
+        "type": "text",
+        "pos": 1,
+        "display_name": "Título (estilos normal y centrado)",
+        "translatable": true
+      },
+      "body": {
+        "type": "richtext",
+        "pos": 2,
+        "display_name": "Texto",
+        "translatable": true
+      },
+      "button_label": {
+        "type": "text",
+        "pos": 3,
+        "display_name": "Texto del botón (solo centrado, ej. Reservar)",
+        "translatable": true
+      },
+      "button_link": {
+        "type": "multilink",
+        "pos": 4,
+        "display_name": "Enlace del botón"
+      },
+      "link_label": {
+        "type": "text",
+        "pos": 5,
+        "display_name": "Texto del botón secundario (solo centrado)",
+        "translatable": true
+      },
+      "link": {
+        "type": "multilink",
+        "pos": 6,
+        "display_name": "Enlace del botón secundario"
+      }
+    }
+  },
+  {
+    "name": "gallery",
+    "display_name": "Galería",
+    "is_root": false,
+    "is_nestable": true,
+    "schema": {
+      "images": {
+        "type": "multiasset",
+        "pos": 0,
+        "display_name": "Fotos (2 a 4 se ven mejor)",
+        "filetypes": [
+          "images"
+        ]
+      }
+    }
+  },
+  {
+    "name": "cards",
+    "display_name": "Tarjetas",
+    "is_root": false,
+    "is_nestable": true,
+    "schema": {
+      "title": {
+        "type": "text",
+        "pos": 0,
+        "display_name": "Título",
+        "translatable": true
+      },
+      "intro": {
+        "type": "textarea",
+        "pos": 1,
+        "display_name": "Introducción",
+        "translatable": true
+      },
+      "items": {
+        "type": "bloks",
+        "pos": 2,
+        "display_name": "Tarjetas",
+        "restrict_components": true,
+        "component_whitelist": [
+          "card"
+        ]
+      }
+    }
+  },
+  {
+    "name": "card",
+    "display_name": "Tarjeta",
+    "is_root": false,
+    "is_nestable": true,
+    "schema": {
+      "image": {
+        "type": "asset",
+        "pos": 0,
+        "display_name": "Foto",
+        "filetypes": [
+          "images"
+        ],
+        "required": false
+      },
+      "title": {
+        "type": "text",
+        "pos": 1,
+        "display_name": "Título",
+        "translatable": true,
+        "required": true
+      },
+      "detail": {
+        "type": "text",
+        "pos": 2,
+        "display_name": "Dato (estilo, precio, capacidad...)",
+        "translatable": true
+      },
+      "text": {
+        "type": "textarea",
+        "pos": 3,
+        "display_name": "Texto",
+        "translatable": true
+      },
+      "link_label": {
+        "type": "text",
+        "pos": 4,
+        "display_name": "Texto del enlace",
+        "translatable": true
+      },
+      "link": {
+        "type": "multilink",
+        "pos": 5,
+        "display_name": "Enlace"
+      }
+    }
+  },
+  {
+    "name": "details",
+    "display_name": "Datos prácticos",
+    "is_root": false,
+    "is_nestable": true,
+    "schema": {
+      "title": {
+        "type": "text",
+        "pos": 0,
+        "display_name": "Título",
+        "translatable": true
+      },
+      "rows": {
+        "type": "bloks",
+        "pos": 1,
+        "display_name": "Filas",
+        "restrict_components": true,
+        "component_whitelist": [
+          "detail_row"
+        ]
+      },
+      "link_label": {
+        "type": "text",
+        "pos": 2,
+        "display_name": "Texto del enlace",
+        "translatable": true
+      },
+      "link": {
+        "type": "multilink",
+        "pos": 3,
+        "display_name": "Enlace"
+      }
+    }
+  },
+  {
+    "name": "detail_row",
+    "display_name": "Fila de datos",
+    "is_root": false,
+    "is_nestable": true,
+    "schema": {
+      "label": {
+        "type": "text",
+        "pos": 0,
+        "display_name": "Etiqueta",
+        "translatable": true
+      },
+      "value": {
+        "type": "textarea",
+        "pos": 1,
+        "display_name": "Valor",
+        "translatable": true
+      }
+    }
+  },
+  {
+    "name": "cta",
+    "display_name": "Llamada a la acción",
+    "is_root": false,
+    "is_nestable": true,
+    "schema": {
+      "title": {
+        "type": "text",
+        "pos": 0,
+        "display_name": "Título",
+        "translatable": true,
+        "required": true
+      },
+      "text": {
+        "type": "textarea",
+        "pos": 1,
+        "display_name": "Texto",
+        "translatable": true
+      },
+      "button_label": {
+        "type": "text",
+        "pos": 2,
+        "display_name": "Texto del botón",
+        "translatable": true
+      },
+      "link": {
+        "type": "multilink",
+        "pos": 3,
+        "display_name": "Enlace del botón"
+      },
+      "background": {
+        "type": "option",
+        "pos": 4,
+        "display_name": "Fondo",
+        "options": [
+          {
+            "name": "Óxido (textura, malta)",
+            "value": "oxido"
+          },
+          {
+            "name": "Muro (textura, olivo)",
+            "value": "muro"
+          },
+          {
+            "name": "Ladrillo (textura, carbón)",
+            "value": "ladrillo"
+          },
+          {
+            "name": "Arena con textura",
+            "value": "arena-textura"
+          },
+          {
+            "name": "Arena",
+            "value": "arena"
+          },
+          {
+            "name": "Carbón",
+            "value": "carbon"
+          },
+          {
+            "name": "Crema",
+            "value": "crema"
+          }
+        ],
+        "default_value": "arena"
+      }
+    }
+  },
+  {
+    "name": "newsletter",
+    "display_name": "Newsletter",
+    "is_root": false,
+    "is_nestable": true,
+    "schema": {
+      "title": {
+        "type": "text",
+        "pos": 0,
+        "display_name": "Título",
+        "translatable": true
+      },
+      "text": {
+        "type": "textarea",
+        "pos": 1,
+        "display_name": "Texto",
+        "translatable": true
+      },
+      "button_label": {
+        "type": "text",
+        "pos": 2,
+        "display_name": "Texto del botón",
+        "translatable": true
+      },
+      "placeholder": {
+        "type": "text",
+        "pos": 3,
+        "display_name": "Texto dentro del campo de correo",
+        "translatable": true
+      },
+      "success_message": {
+        "type": "text",
+        "pos": 4,
+        "display_name": "Mensaje al suscribirse",
+        "translatable": true
+      },
+      "background": {
+        "type": "option",
+        "pos": 5,
+        "display_name": "Fondo",
+        "options": [
+          {
+            "name": "Óxido (textura, malta)",
+            "value": "oxido"
+          },
+          {
+            "name": "Muro (textura, olivo)",
+            "value": "muro"
+          },
+          {
+            "name": "Ladrillo (textura, carbón)",
+            "value": "ladrillo"
+          },
+          {
+            "name": "Arena con textura",
+            "value": "arena-textura"
+          },
+          {
+            "name": "Arena",
+            "value": "arena"
+          },
+          {
+            "name": "Carbón",
+            "value": "carbon"
+          },
+          {
+            "name": "Crema",
+            "value": "crema"
+          }
+        ],
+        "default_value": "arena"
+      }
+    }
+  },
+  {
+    "name": "cerveza",
+    "display_name": "Cerveza",
+    "is_root": true,
+    "is_nestable": false,
+    "schema": {
+      "name": {
+        "type": "text",
+        "pos": 0,
+        "display_name": "Nombre",
+        "required": true
+      },
+      "image": {
+        "type": "asset",
+        "pos": 1,
+        "display_name": "Foto de la lata o botella (PNG con fondo transparente)",
+        "filetypes": [
+          "images"
+        ]
+      },
+      "style": {
+        "type": "text",
+        "pos": 2,
+        "display_name": "Estilo",
+        "translatable": true
+      },
+      "description": {
+        "type": "textarea",
+        "pos": 3,
+        "display_name": "Descripción corta (tarjeta)",
+        "translatable": true,
+        "max_length": 140
+      },
+      "abv": {
+        "type": "text",
+        "pos": 4,
+        "display_name": "% alcohol (solo el número, ej. 5.5)"
+      },
+      "ibu": {
+        "type": "text",
+        "pos": 5,
+        "display_name": "IBU"
+      },
+      "srm": {
+        "type": "text",
+        "pos": 6,
+        "display_name": "SRM (color, del 1 al 40)"
+      },
+      "notes": {
+        "type": "richtext",
+        "pos": 7,
+        "display_name": "Notas de cata e historia (página de la cerveza)",
+        "translatable": true
+      },
+      "pairing": {
+        "type": "textarea",
+        "pos": 8,
+        "display_name": "Marida con",
+        "translatable": true
+      },
+      "line": {
+        "type": "option",
+        "pos": 9,
+        "display_name": "Tipo",
+        "options": [
+          {
+            "name": "De línea",
+            "value": "linea"
+          },
+          {
+            "name": "De temporada",
+            "value": "temporada"
+          }
+        ],
+        "default_value": "linea"
+      },
+      "available": {
+        "type": "boolean",
+        "pos": 10,
+        "display_name": "Disponible (si se desmarca, no aparece en el sitio)",
+        "default_value": true
+      }
+    }
+  },
+  {
+    "name": "beer_list",
+    "display_name": "Lista de cervezas",
+    "is_root": false,
+    "is_nestable": true,
+    "schema": {
+      "title": {
+        "type": "text",
+        "pos": 0,
+        "display_name": "Título",
+        "translatable": true
+      },
+      "intro": {
+        "type": "textarea",
+        "pos": 1,
+        "display_name": "Introducción",
+        "translatable": true
+      },
+      "filter": {
+        "type": "option",
+        "pos": 2,
+        "display_name": "Mostrar",
+        "options": [
+          {
+            "name": "Todas",
+            "value": "todas"
+          },
+          {
+            "name": "Solo de línea",
+            "value": "linea"
+          },
+          {
+            "name": "Solo de temporada",
+            "value": "temporada"
+          }
+        ],
+        "default_value": "todas"
+      },
+      "limit": {
+        "type": "number",
+        "pos": 3,
+        "display_name": "Máximo de cervezas (vacío = todas)"
+      },
+      "link_label": {
+        "type": "text",
+        "pos": 4,
+        "display_name": "Texto del enlace de cada cerveza",
+        "translatable": true,
+        "default_value": "Ver más"
+      }
+    }
+  },
+  {
+    "name": "carousel",
+    "display_name": "Carrusel",
+    "is_root": false,
+    "is_nestable": true,
+    "schema": {
+      "title": {
+        "type": "text",
+        "pos": 0,
+        "display_name": "Título",
+        "translatable": true
+      },
+      "intro": {
+        "type": "textarea",
+        "pos": 1,
+        "display_name": "Introducción",
+        "translatable": true
+      },
+      "items": {
+        "type": "bloks",
+        "pos": 2,
+        "display_name": "Fotos o tarjetas",
+        "restrict_components": true,
+        "component_whitelist": [
+          "slide"
+        ]
+      }
+    }
+  },
+  {
+    "name": "slide",
+    "display_name": "Foto del carrusel",
+    "is_root": false,
+    "is_nestable": true,
+    "schema": {
+      "image": {
+        "type": "asset",
+        "pos": 0,
+        "display_name": "Foto",
+        "filetypes": [
+          "images"
+        ],
+        "required": true
+      },
+      "title": {
+        "type": "text",
+        "pos": 1,
+        "display_name": "Título (opcional)",
+        "translatable": true
+      },
+      "text": {
+        "type": "textarea",
+        "pos": 2,
+        "display_name": "Texto, 2 o 3 líneas (opcional)",
+        "translatable": true
+      },
+      "button_label": {
+        "type": "text",
+        "pos": 3,
+        "display_name": "Texto del botón principal (opcional)",
+        "translatable": true
+      },
+      "button_link": {
+        "type": "multilink",
+        "pos": 4,
+        "display_name": "Enlace del botón principal"
+      },
+      "link_label": {
+        "type": "text",
+        "pos": 5,
+        "display_name": "Texto del enlace secundario (opcional, ej. Conocer más)",
+        "translatable": true
+      },
+      "link": {
+        "type": "multilink",
+        "pos": 6,
+        "display_name": "Enlace secundario"
+      }
+    }
+  }
+]

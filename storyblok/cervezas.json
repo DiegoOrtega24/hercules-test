@@ -1,0 +1,234 @@
+[
+  {
+    "slug": "terricola",
+    "name": "Terrícola",
+    "position": 1,
+    "content": {
+      "_uid": "cerveza-terricola",
+      "component": "cerveza",
+      "name": "Terrícola",
+      "style": "Saison silvestre",
+      "style__i18n__en": "Wild saison",
+      "description": "Saison silvestre con notas terrosas y frutales.",
+      "description__i18n__en": "Wild saison with earthy, fruity notes.",
+      "abv": "5",
+      "ibu": "",
+      "srm": "",
+      "notes": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Texto de ejemplo: notas de cata completas, ingredientes y la historia detrás de esta cerveza."
+              }
+            ]
+          }
+        ]
+      },
+      "notes__i18n__en": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Sample text: full tasting notes, ingredients and the story behind this beer."
+              }
+            ]
+          }
+        ]
+      },
+      "pairing": "Por confirmar",
+      "pairing__i18n__en": "To be confirmed",
+      "image": {
+        "id": null,
+        "filename": "/cervezas/terricola.svg",
+        "alt": "Lata de Terrícola",
+        "fieldtype": "asset",
+        "name": "",
+        "title": "",
+        "focus": ""
+      },
+      "line": "linea",
+      "available": true
+    }
+  },
+  {
+    "slug": "hombre-pajaro",
+    "name": "Hombre Pájaro",
+    "position": 2,
+    "content": {
+      "_uid": "cerveza-hombre-pajaro",
+      "component": "cerveza",
+      "name": "Hombre Pájaro",
+      "style": "Estilo por confirmar",
+      "style__i18n__en": "Style to be confirmed",
+      "description": "Descripción corta de ejemplo para la tarjeta.",
+      "description__i18n__en": "Short sample description for the card.",
+      "abv": "",
+      "ibu": "",
+      "srm": "",
+      "notes": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Texto de ejemplo: notas de cata completas, ingredientes y la historia detrás de esta cerveza."
+              }
+            ]
+          }
+        ]
+      },
+      "notes__i18n__en": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Sample text: full tasting notes, ingredients and the story behind this beer."
+              }
+            ]
+          }
+        ]
+      },
+      "pairing": "Por confirmar",
+      "pairing__i18n__en": "To be confirmed",
+      "image": {
+        "id": null,
+        "filename": "/cervezas/hombre-pajaro.svg",
+        "alt": "Lata de Hombre Pájaro",
+        "fieldtype": "asset",
+        "name": "",
+        "title": "",
+        "focus": ""
+      },
+      "line": "linea",
+      "available": true
+    }
+  },
+  {
+    "slug": "super-lupe",
+    "name": "Súper Lupe",
+    "position": 3,
+    "content": {
+      "_uid": "cerveza-super-lupe",
+      "component": "cerveza",
+      "name": "Súper Lupe",
+      "style": "IPA",
+      "style__i18n__en": "IPA",
+      "description": "Descripción corta de ejemplo para la tarjeta.",
+      "description__i18n__en": "Short sample description for the card.",
+      "abv": "",
+      "ibu": "",
+      "srm": "",
+      "notes": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Texto de ejemplo: notas de cata completas, ingredientes y la historia detrás de esta cerveza."
+              }
+            ]
+          }
+        ]
+      },
+      "notes__i18n__en": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Sample text: full tasting notes, ingredients and the story behind this beer."
+              }
+            ]
+          }
+        ]
+      },
+      "pairing": "Por confirmar",
+      "pairing__i18n__en": "To be confirmed",
+      "image": {
+        "id": null,
+        "filename": "/cervezas/super-lupe.svg",
+        "alt": "Lata de Súper Lupe",
+        "fieldtype": "asset",
+        "name": "",
+        "title": "",
+        "focus": ""
+      },
+      "line": "linea",
+      "available": true
+    }
+  },
+  {
+    "slug": "astro",
+    "name": "Astro",
+    "position": 4,
+    "content": {
+      "_uid": "cerveza-astro",
+      "component": "cerveza",
+      "name": "Astro",
+      "style": "Vienna Lager",
+      "style__i18n__en": "Vienna Lager",
+      "description": "Descripción corta de ejemplo para la tarjeta.",
+      "description__i18n__en": "Short sample description for the card.",
+      "abv": "",
+      "ibu": "",
+      "srm": "",
+      "notes": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Texto de ejemplo: notas de cata completas, ingredientes y la historia detrás de esta cerveza."
+              }
+            ]
+          }
+        ]
+      },
+      "notes__i18n__en": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Sample text: full tasting notes, ingredients and the story behind this beer."
+              }
+            ]
+          }
+        ]
+      },
+      "pairing": "Por confirmar",
+      "pairing__i18n__en": "To be confirmed",
+      "image": {
+        "id": null,
+        "filename": "/cervezas/astro.svg",
+        "alt": "Lata de Astro",
+        "fieldtype": "asset",
+        "name": "",
+        "title": "",
+        "focus": ""
+      },
+      "line": "temporada",
+      "available": true
+    }
+  }
+]

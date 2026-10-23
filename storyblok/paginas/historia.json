@@ -1,0 +1,165 @@
+{
+  "_uid": "page-61",
+  "component": "page",
+  "seo_title": "Historia | Compañía Cervecera Hércules",
+  "seo_title__i18n__en": "History | Compañía Cervecera Hércules",
+  "seo_description": "De fábrica textil de 1846 a cervecería, jardín y hotel en Querétaro.",
+  "seo_description__i18n__en": "From an 1846 textile mill to a brewery, beer garden and hotel in Querétaro.",
+  "body": [
+    {
+      "_uid": "hero-55",
+      "component": "hero",
+      "image": {
+        "id": null,
+        "filename": "/fotos/fabrica.jpg",
+        "alt": "Interior de la fábrica",
+        "fieldtype": "asset",
+        "name": "",
+        "title": "",
+        "focus": ""
+      },
+      "size": "media",
+      "title": "Historia",
+      "title__i18n__en": "History",
+      "subtitle": "De fábrica textil a cervecería.",
+      "subtitle__i18n__en": "From textile mill to brewery."
+    },
+    {
+      "_uid": "text-56",
+      "component": "text_block",
+      "style": "destacado",
+      "body": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Hércules ocupa una fábrica textil fundada en 1846, en la colonia que lleva su nombre."
+              }
+            ]
+          }
+        ]
+      },
+      "body__i18n__en": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Hércules occupies a textile mill founded in 1846, in the neighborhood that bears its name."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "_uid": "feature-57",
+      "component": "feature",
+      "image": {
+        "id": null,
+        "filename": "/fotos/letrero.jpg",
+        "alt": "Letrero antiguo pintado a mano en la fábrica",
+        "fieldtype": "asset",
+        "name": "",
+        "title": "",
+        "focus": ""
+      },
+      "image_side": "izquierda",
+      "title": "La fábrica",
+      "title__i18n__en": "The mill",
+      "text": "Texto de ejemplo: la historia de la fábrica textil y de la colonia Hércules.",
+      "text__i18n__en": "Sample text: the story of the textile mill and the Hércules neighborhood."
+    },
+    {
+      "_uid": "gallery-58",
+      "component": "gallery",
+      "images": [
+        {
+          "id": 1,
+          "filename": "/fotos/muro.jpg",
+          "alt": "Muro original de la fábrica",
+          "fieldtype": "asset",
+          "name": "",
+          "title": "",
+          "focus": ""
+        },
+        {
+          "id": 2,
+          "filename": "/fotos/edificio.jpg",
+          "alt": "Fachada con el logo de Hércules",
+          "fieldtype": "asset",
+          "name": "",
+          "title": "",
+          "focus": ""
+        },
+        {
+          "id": 3,
+          "filename": "/fotos/vista-aerea.jpg",
+          "alt": "Vista aérea de la colonia",
+          "fieldtype": "asset",
+          "name": "",
+          "title": "",
+          "focus": ""
+        }
+      ]
+    },
+    {
+      "_uid": "text-59",
+      "component": "text_block",
+      "style": "normal",
+      "body": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Texto de ejemplo: cómo nació la cervecería y lo que la fábrica significa hoy para la comunidad."
+              }
+            ]
+          }
+        ]
+      },
+      "body__i18n__en": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Sample text: how the brewery began and what the mill means to the community today."
+              }
+            ]
+          }
+        ]
+      },
+      "title": "Hoy",
+      "title__i18n__en": "Today"
+    },
+    {
+      "_uid": "cta-60",
+      "component": "cta",
+      "background": "carbon",
+      "link": {
+        "id": "",
+        "url": "/tours",
+        "linktype": "url",
+        "fieldtype": "multilink",
+        "cached_url": "/tours"
+      },
+      "title": "Conoce la fábrica en persona",
+      "title__i18n__en": "See the mill in person",
+      "text": "Los tours recorren la fábrica y terminan con una cerveza.",
+      "text__i18n__en": "Tours walk through the mill and end with a beer.",
+      "button_label": "Reservar tour",
+      "button_label__i18n__en": "Book a tour"
+    }
+  ]
+}
