@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { idiomas } from "@/lib/i18n";
 import { ALTO, ANCHO, LINEA, SILUETA } from "./hercules-icono";
 
@@ -20,6 +20,29 @@ function Rayitas({ abierto }) {
 // Botón de menú: el Hércules del mural. Cerrado está vacío; al abrir el
 // menú se llena de cerveza y la línea toma el rojo ladrillo del mural.
 function IconoMenu({ abierto }) {
+  const liquido = useRef(null);
+  const nivel = useRef(0); // 0 = vacío, 1 = lleno
+
+  // El llenado se anima cuadro por cuadro con JavaScript, moviendo el
+  // atributo "transform" del rectángulo: así se ve suave en todos los
+  // navegadores, incluido Safari en iPhone.
+  useEffect(() => {
+    const desde = nivel.current;
+    const hasta = abierto ? 1 : 0;
+    const inicio = performance.now();
+    const duracion = 650;
+    let cuadro;
+    const paso = (ahora) => {
+      const t = Math.min(1, (ahora - inicio) / duracion);
+      const suave = 1 - Math.pow(1 - t, 4); // arranca rápido y frena al final
+      nivel.current = desde + (hasta - desde) * suave;
+      liquido.current?.setAttribute("transform", `translate(0 ${(1 - nivel.current) * ALTO})`);
+      if (t < 1) cuadro = requestAnimationFrame(paso);
+    };
+    cuadro = requestAnimationFrame(paso);
+    return () => cancelAnimationFrame(cuadro);
+  }, [abierto]);
+
   return (
     <svg viewBox={`0 0 ${ANCHO} ${ALTO}`} className="h-11 w-auto" aria-hidden="true">
       <defs>
@@ -28,16 +51,7 @@ function IconoMenu({ abierto }) {
         </clipPath>
       </defs>
       <g clipPath="url(#hercules-menu)">
-        <rect
-          width={ANCHO}
-          height={ALTO}
-          fill="var(--color-ambar)"
-          style={{
-            transformBox: "view-box",
-            transform: abierto ? "translateY(0)" : `translateY(${ALTO}px)`,
-            transition: "transform 650ms cubic-bezier(0.22, 1, 0.36, 1)",
-          }}
-        />
+        <rect ref={liquido} width={ANCHO} height={ALTO} transform={`translate(0 ${ALTO})`} style={{ fill: "var(--color-ambar)" }} />
       </g>
       <path
         d={LINEA}

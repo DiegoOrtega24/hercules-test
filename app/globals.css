@@ -190,7 +190,9 @@ em, i { font-weight: 500; font-style: italic; }
   to { translate: 0 5%; }
 }
 
+/* Con "reducir movimiento" activado en el teléfono: sin scroll animado, sin
+   parallax ni elementos que se deslizan al hacer scroll (esos solo existen en
+   no-preference, arriba). Los fundidos y cambios de color se mantienen. */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  *, *::before, *::after { animation: none !important; transition: none !important; }
 }

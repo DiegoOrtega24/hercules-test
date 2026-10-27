@@ -26,7 +26,7 @@ export default function Hero({ blok }) {
   }));
 
   return (
-    <section {...storyblokEditable(blok)} className="relative h-[100svh] min-h-[560px] overflow-hidden bg-carbon text-crema">
+    <section {...storyblokEditable(blok)} className="relative h-[100svh] min-h-[560px] touch-pan-y overflow-hidden bg-carbon text-crema">
       <HeroFotos fotos={fotos} t={textos[blok._idioma] || textos.es} />
       {/* Sombra suave solo arriba (menú) y abajo (título) para que se lean */}
       <div aria-hidden="true" className="pointer-events-none absolute inset-x-0 top-0 h-36 bg-gradient-to-b from-carbon/45 to-transparent" />

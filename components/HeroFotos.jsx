@@ -1,22 +1,54 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 // Fotos de la portada. Con una sola foto, queda fija. Con varias, cambian
-// solas cada 5.5 s con un fundido; se pueden elegir con los puntos y pausar.
+// solas cada 5.5 s con un fundido; se pueden elegir con los puntos, pausar,
+// o deslizar con el dedo a la izquierda o derecha en el celular.
 export default function HeroFotos({ fotos, t }) {
   const [actual, setActual] = useState(0);
   const [pausa, setPausa] = useState(false);
   const varias = fotos.length > 1;
+  const ancla = useRef(null);
 
+  // Cambio automático. Se reinicia cada vez que cambia la foto, así que
+  // después de deslizar o tocar un punto vuelve a esperar 5.5 s completos.
   useEffect(() => {
     if (!varias || pausa) return;
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    const id = setInterval(() => setActual((x) => (x + 1) % fotos.length), 5500);
-    return () => clearInterval(id);
-  }, [varias, pausa, fotos.length]);
+    const id = setTimeout(() => setActual((x) => (x + 1) % fotos.length), 5500);
+    return () => clearTimeout(id);
+  }, [actual, varias, pausa, fotos.length]);
+
+  // Deslizar con el dedo sobre la portada: a la izquierda la siguiente foto,
+  // a la derecha la anterior. El scroll vertical de la página sigue normal.
+  useEffect(() => {
+    const zona = ancla.current?.parentElement;
+    if (!zona || !varias) return;
+    let x0 = null;
+    let y0 = null;
+    const alTocar = (e) => {
+      x0 = e.touches[0].clientX;
+      y0 = e.touches[0].clientY;
+    };
+    const alSoltar = (e) => {
+      if (x0 === null) return;
+      const dx = e.changedTouches[0].clientX - x0;
+      const dy = e.changedTouches[0].clientY - y0;
+      x0 = null;
+      if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy) * 1.2) {
+        setActual((a) => (a + (dx < 0 ? 1 : -1) + fotos.length) % fotos.length);
+      }
+    };
+    zona.addEventListener("touchstart", alTocar, { passive: true });
+    zona.addEventListener("touchend", alSoltar, { passive: true });
+    return () => {
+      zona.removeEventListener("touchstart", alTocar);
+      zona.removeEventListener("touchend", alSoltar);
+    };
+  }, [varias, fotos.length]);
 
   return (
     <>
+      <span ref={ancla} hidden />
       {fotos.map((f, k) => (
         <img
           key={f.src}
@@ -26,7 +58,7 @@ export default function HeroFotos({ fotos, t }) {
           alt={k === actual ? f.alt : ""}
           aria-hidden={k !== actual}
           fetchPriority={k === 0 ? "high" : "low"}
-          loading={k === 0 ? "eager" : "lazy"}
+          loading="eager"
           style={{ objectPosition: f.pos }}
           className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-[1200ms] ease-in-out ${
             k === actual ? "opacity-100" : "opacity-0"

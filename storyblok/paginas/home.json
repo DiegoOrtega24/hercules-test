@@ -98,16 +98,20 @@
       }
     },
     {
-      "_uid": "grid-h2",
-      "component": "sections_grid",
+      "_uid": "mosaic-principal",
+      "component": "venue_mosaic",
+      "title": "Nuestros espacios",
+      "title__i18n__en": "Our spaces",
+      "intro": "Conoce cada espacio de la fábrica.",
+      "intro__i18n__en": "Explore each space in the mill.",
       "items": [
         {
-          "_uid": "tile-h3",
-          "component": "section_tile",
+          "_uid": "mosaic-p1",
+          "component": "mosaic_tile",
           "image": {
             "id": null,
             "filename": "/fotos/lupulo.jpg",
-            "alt": "Lúpulo cayendo en la olla de cocción",
+            "alt": "",
             "fieldtype": "asset",
             "name": "",
             "title": "",
@@ -115,20 +119,20 @@
           },
           "logo": {
             "id": null,
-            "filename": "/logos/cerveceria.svg",
+            "filename": "/logos/cerveceria-crema.svg",
             "alt": "Compañía Cervecera Hércules",
             "fieldtype": "asset",
             "name": "",
             "title": "",
             "focus": ""
           },
-          "title": "Cervecería",
-          "title__i18n__en": "Brewery",
+          "name": "Cervecería",
+          "name__i18n__en": "Brewery",
           "text": "Cervezas de línea y de temporada, hechas dentro de la fábrica.",
           "text__i18n__en": "Year-round and seasonal beers brewed inside the mill.",
-          "link_label": "Conoce las cervezas",
-          "link_label__i18n__en": "See the beers",
-          "link": {
+          "button_label": "Conoce las cervezas",
+          "button_label__i18n__en": "See the beers",
+          "button_link": {
             "id": "",
             "url": "/cerveceria",
             "linktype": "url",
@@ -137,12 +141,12 @@
           }
         },
         {
-          "_uid": "tile-h4",
-          "component": "section_tile",
+          "_uid": "mosaic-p2",
+          "component": "mosaic_tile",
           "image": {
             "id": null,
             "filename": "/fotos/jardin-noche.jpg",
-            "alt": "Amigos brindando en el jardín de noche",
+            "alt": "",
             "fieldtype": "asset",
             "name": "",
             "title": "",
@@ -150,19 +154,28 @@
           },
           "logo": {
             "id": null,
-            "filename": "/logos/jardin.svg",
+            "filename": "/logos/jardin-crema.svg",
             "alt": "Jardín Hércules",
             "fieldtype": "asset",
             "name": "",
             "title": "",
             "focus": ""
           },
-          "title": "Jardín",
-          "title__i18n__en": "Garden",
+          "name": "Jardín",
+          "name__i18n__en": "Garden",
           "text": "Para quedarse la tarde entera: cerveza fresca, comida y buena compañía.",
           "text__i18n__en": "Stay the whole afternoon: fresh beer, good food and good company.",
-          "link_label": "Horarios y menú",
-          "link_label__i18n__en": "Hours and menu",
+          "button_label": "Menú",
+          "button_label__i18n__en": "Menu",
+          "button_link": {
+            "id": "",
+            "url": "/jardin#menu",
+            "linktype": "url",
+            "fieldtype": "multilink",
+            "cached_url": "/jardin#menu"
+          },
+          "link_label": "Conocer más",
+          "link_label__i18n__en": "Learn more",
           "link": {
             "id": "",
             "url": "/jardin",
@@ -172,12 +185,12 @@
           }
         },
         {
-          "_uid": "tile-h5",
-          "component": "section_tile",
+          "_uid": "mosaic-p3",
+          "component": "mosaic_tile",
           "image": {
             "id": null,
             "filename": "/fotos/vista-aerea.jpg",
-            "alt": "Vista aérea de la colonia Hércules",
+            "alt": "",
             "fieldtype": "asset",
             "name": "",
             "title": "",
@@ -185,15 +198,15 @@
           },
           "logo": {
             "id": null,
-            "filename": "/logos/hotel.svg",
+            "filename": "/logos/hotel-crema.svg",
             "alt": "Hotel Hércules",
             "fieldtype": "asset",
             "name": "",
             "title": "",
             "focus": ""
           },
-          "title": "Hotel",
-          "title__i18n__en": "Hotel",
+          "name": "Hotel",
+          "name__i18n__en": "Hotel",
           "text": "Habitaciones dentro de la antigua fábrica textil, a unos pasos del jardín.",
           "text__i18n__en": "Rooms inside the old textile mill, steps from the garden.",
           "button_label": "Reservar",
@@ -216,12 +229,12 @@
           }
         },
         {
-          "_uid": "tile-h6",
-          "component": "section_tile",
+          "_uid": "mosaic-p4",
+          "component": "mosaic_tile",
           "image": {
             "id": null,
             "filename": "/fotos/cerveza-vaso.jpg",
-            "alt": "Vaso de cerveza Hércules",
+            "alt": "",
             "fieldtype": "asset",
             "name": "",
             "title": "",
@@ -229,15 +242,15 @@
           },
           "logo": {
             "id": null,
-            "filename": "/logos/almacen.svg",
+            "filename": "/logos/almacen-crema.svg",
             "alt": "Almacén Hércules",
             "fieldtype": "asset",
             "name": "",
             "title": "",
             "focus": ""
           },
-          "title": "Almacén",
-          "title__i18n__en": "Shop",
+          "name": "Almacén",
+          "name__i18n__en": "Shop",
           "text": "Cerveza y artículos de la marca para llevar a casa.",
           "text__i18n__en": "Beer and Hércules goods to take home.",
           "button_label": "Comprar ahora",
@@ -320,6 +333,15 @@
             "linktype": "url",
             "fieldtype": "multilink",
             "cached_url": "/venues"
+          },
+          "logo": {
+            "id": null,
+            "filename": "/logos/lagerbar-crema.svg",
+            "alt": "Lagerbar Hércules",
+            "fieldtype": "asset",
+            "name": "",
+            "title": "",
+            "focus": ""
           }
         },
         {
@@ -334,8 +356,8 @@
             "title": "",
             "focus": ""
           },
-          "name": "Buena Vista",
-          "name__i18n__en": "Buena Vista",
+          "name": "Buenavista",
+          "name__i18n__en": "Buenavista",
           "text": "Texto de ejemplo: una línea que presenta el lugar.",
           "text__i18n__en": "Sample text: one line introducing the place.",
           "link_label": "Conocer más",
@@ -346,6 +368,15 @@
             "linktype": "url",
             "fieldtype": "multilink",
             "cached_url": "/venues"
+          },
+          "logo": {
+            "id": null,
+            "filename": "/logos/buenavista-crema.svg",
+            "alt": "Buenavista",
+            "fieldtype": "asset",
+            "name": "",
+            "title": "",
+            "focus": ""
           }
         },
         {
@@ -372,6 +403,15 @@
             "linktype": "url",
             "fieldtype": "multilink",
             "cached_url": "/venues"
+          },
+          "logo": {
+            "id": null,
+            "filename": "/logos/taberna-crema.svg",
+            "alt": "Taberna Hércules",
+            "fieldtype": "asset",
+            "name": "",
+            "title": "",
+            "focus": ""
           }
         },
         {
@@ -386,8 +426,8 @@
             "title": "",
             "focus": ""
           },
-          "name": "Tienda de cerveza Hércules",
-          "name__i18n__en": "Hércules beer shop",
+          "name": "Tienda de Cerveza Hércules",
+          "name__i18n__en": "Hércules Beer Shop",
           "text": "Texto de ejemplo: una línea que presenta el lugar.",
           "text__i18n__en": "Sample text: one line introducing the place.",
           "link_label": "Conocer más",
@@ -398,6 +438,15 @@
             "linktype": "url",
             "fieldtype": "multilink",
             "cached_url": "/venues"
+          },
+          "logo": {
+            "id": null,
+            "filename": "/logos/tienda-cerveza-crema.svg",
+            "alt": "Tienda de Cerveza Hércules",
+            "fieldtype": "asset",
+            "name": "",
+            "title": "",
+            "focus": ""
           }
         }
       ]
