@@ -5,6 +5,18 @@ import { useEffect, useState } from "react";
 import { idiomas } from "@/lib/i18n";
 import { ALTO, ANCHO, LINEA, SILUETA } from "./hercules-icono";
 
+// Las tres rayitas clásicas del menú; al abrir se convierten en una X
+function Rayitas({ abierto }) {
+  const linea = "absolute left-0 h-[2px] w-full rounded-full bg-current transition-all duration-300";
+  return (
+    <span aria-hidden="true" className="relative block h-3.5 w-5">
+      <span className={`${linea} top-0 ${abierto ? "translate-y-[6px] rotate-45" : ""}`} />
+      <span className={`${linea} top-[6px] ${abierto ? "opacity-0" : ""}`} />
+      <span className={`${linea} top-3 ${abierto ? "-translate-y-[6px] -rotate-45" : ""}`} />
+    </span>
+  );
+}
+
 // Botón de menú: el Hércules del mural. Cerrado está vacío; al abrir el
 // menú se llena de cerveza y la línea toma el rojo ladrillo del mural.
 function IconoMenu({ abierto }) {
@@ -112,14 +124,17 @@ export default function Nav({ lang, menu, t }) {
           <SelectorIdioma ruta={ruta} lang={lang} t={t} />
         </div>
 
+        {/* Botón de menú: las tres rayitas (para que se entienda que es el menú)
+            junto al Hércules, que se llena al abrir */}
         <button
           type="button"
-          className="-my-2 -mr-1 p-1 md:hidden"
+          className="-my-2 -mr-1 flex items-center gap-2.5 p-1 md:hidden"
           aria-label={abierto ? t.cerrar : t.menu}
           aria-expanded={abierto}
           aria-controls="menu-movil"
           onClick={() => setAbierto(!abierto)}
         >
+          <Rayitas abierto={abierto} />
           <IconoMenu abierto={abierto} />
         </button>
       </div>

@@ -30,8 +30,8 @@
 
 /* Colores del Manual de identidad corporativa */
 @theme {
-  --color-crema: #f9f5e3;
-  --color-arena: #efe5cb;
+  --color-crema: #f2efe9; /* hueso (antes crema #f9f5e3) */
+  --color-arena: #e4ded3; /* hueso oscuro para bandas y tarjetas */
   --color-carbon: #1f2326;
   --color-ambar: #fea600;
   --color-olivo: #4c472a;
@@ -53,7 +53,7 @@
   @media (width >= 64rem) { padding-inline: 4rem; }
 }
 
-/* Fondo crema sólido del manual (sin textura, a petición del cliente) */
+/* Fondo hueso sólido (a petición del cliente) */
 html {
   background-color: var(--color-crema);
   color: var(--color-carbon);

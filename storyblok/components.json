@@ -12,6 +12,8 @@
         "restrict_components": true,
         "component_whitelist": [
           "hero",
+          "venue_mosaic",
+          "sections_grid",
           "feature",
           "text_block",
           "gallery",
@@ -803,6 +805,169 @@
         "type": "multilink",
         "pos": 6,
         "display_name": "Enlace secundario"
+      }
+    }
+  },
+  {
+    "name": "sections_grid",
+    "display_name": "Secciones principales",
+    "is_root": false,
+    "is_nestable": true,
+    "schema": {
+      "title": {
+        "type": "text",
+        "pos": 0,
+        "display_name": "Título (opcional)",
+        "translatable": true
+      },
+      "items": {
+        "type": "bloks",
+        "pos": 1,
+        "display_name": "Secciones",
+        "restrict_components": true,
+        "component_whitelist": [
+          "section_tile"
+        ]
+      }
+    }
+  },
+  {
+    "name": "section_tile",
+    "display_name": "Sección principal",
+    "is_root": false,
+    "is_nestable": true,
+    "schema": {
+      "title": {
+        "type": "text",
+        "pos": 0,
+        "display_name": "Título",
+        "translatable": true,
+        "required": true
+      },
+      "text": {
+        "type": "textarea",
+        "pos": 1,
+        "display_name": "Texto corto (1 o 2 líneas)",
+        "translatable": true
+      },
+      "logo": {
+        "type": "asset",
+        "pos": 2,
+        "display_name": "Logo (oscuro, opcional)",
+        "filetypes": [
+          "images"
+        ],
+        "required": false
+      },
+      "image": {
+        "type": "asset",
+        "pos": 3,
+        "display_name": "Foto (se muestra en 4:3)",
+        "filetypes": [
+          "images"
+        ],
+        "required": true
+      },
+      "button_label": {
+        "type": "text",
+        "pos": 4,
+        "display_name": "Texto del botón principal (ej. Reservar)",
+        "translatable": true
+      },
+      "button_link": {
+        "type": "multilink",
+        "pos": 5,
+        "display_name": "Enlace del botón principal"
+      },
+      "link_label": {
+        "type": "text",
+        "pos": 6,
+        "display_name": "Texto del botón secundario (ej. Conocer más)",
+        "translatable": true
+      },
+      "link": {
+        "type": "multilink",
+        "pos": 7,
+        "display_name": "Enlace del botón secundario"
+      }
+    }
+  },
+  {
+    "name": "venue_mosaic",
+    "display_name": "Mosaico de venues",
+    "is_root": false,
+    "is_nestable": true,
+    "schema": {
+      "title": {
+        "type": "text",
+        "pos": 0,
+        "display_name": "Título",
+        "translatable": true
+      },
+      "intro": {
+        "type": "textarea",
+        "pos": 1,
+        "display_name": "Introducción",
+        "translatable": true
+      },
+      "items": {
+        "type": "bloks",
+        "pos": 2,
+        "display_name": "Venues",
+        "restrict_components": true,
+        "component_whitelist": [
+          "mosaic_tile"
+        ]
+      }
+    }
+  },
+  {
+    "name": "mosaic_tile",
+    "display_name": "Venue del mosaico",
+    "is_root": false,
+    "is_nestable": true,
+    "schema": {
+      "name": {
+        "type": "text",
+        "pos": 0,
+        "display_name": "Nombre",
+        "translatable": true,
+        "required": true
+      },
+      "image": {
+        "type": "asset",
+        "pos": 1,
+        "display_name": "Foto",
+        "filetypes": [
+          "images"
+        ],
+        "required": true
+      },
+      "logo": {
+        "type": "asset",
+        "pos": 2,
+        "display_name": "Logo claro (opcional; si no hay, se muestra el nombre)",
+        "filetypes": [
+          "images"
+        ],
+        "required": false
+      },
+      "text": {
+        "type": "textarea",
+        "pos": 3,
+        "display_name": "Texto corto",
+        "translatable": true
+      },
+      "link_label": {
+        "type": "text",
+        "pos": 4,
+        "display_name": "Texto del botón (ej. Conocer más)",
+        "translatable": true
+      },
+      "link": {
+        "type": "multilink",
+        "pos": 5,
+        "display_name": "Enlace"
       }
     }
   }

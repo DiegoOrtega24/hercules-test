@@ -2,6 +2,7 @@ import { StoryblokServerComponent, StoryblokStory } from "@storyblok/react/rsc";
 import { storyblokConectado } from "@/lib/storyblok";
 import { cargarHistoria } from "@/lib/contenido";
 import { prepararEnlaces } from "@/lib/utilidades";
+import { notFound } from "next/navigation";
 import { esIdioma, idiomas, textos } from "@/lib/i18n";
 import EnConstruccion from "@/components/EnConstruccion";
 
@@ -22,6 +23,7 @@ function idiomaDe(lang, searchParams) {
 
 export async function generateMetadata({ params, searchParams }) {
   const p = await params;
+  if (!esIdioma(p.lang)) return {};
   const lang = idiomaDe(p.lang, await searchParams);
   const slug = slugDe(p);
   const story = await cargarHistoria(slug, lang);
@@ -39,6 +41,7 @@ export async function generateMetadata({ params, searchParams }) {
 
 export default async function Pagina({ params, searchParams }) {
   const p = await params;
+  if (!esIdioma(p.lang)) notFound(); // p. ej. /favicon.ico
   const lang = idiomaDe(p.lang, await searchParams);
   const slug = slugDe(p);
 
